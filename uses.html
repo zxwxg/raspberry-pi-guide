@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!-- Site designed and built by Mohammed Al-Quwaizani -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12 Ways a Raspberry Pi Helps You — Practical Uses, Costs &amp; Setup — Raspberry Pi Guide</title>
+<meta name="description" content="Twelve real uses for a Raspberry Pi with the hardware you need, the total cost, difficulty and why each one helps: home automation, personal cloud, ad blocking, media centre, retro gaming, NAS, cameras, AI and more.">
+<meta name="author" content="Mohammed Al-Quwaizani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071023">
+<meta name="application-name" content="Raspberry Pi Guide">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Raspberry Pi Guide">
+<meta property="og:title" content="12 Ways a Raspberry Pi Helps You — Practical Uses, Costs &amp; Setup — Raspberry Pi Guide">
+<meta property="og:description" content="Twelve real uses for a Raspberry Pi with the hardware you need, the total cost, difficulty and why each one helps: home automation, personal cloud, ad blocking, media centre, retro gaming, NAS, cameras, AI and more.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="12 Ways a Raspberry Pi Helps You — Practical Uses, Costs &amp; Setup — Raspberry Pi Guide">
+<meta name="twitter:description" content="Twelve real uses for a Raspberry Pi with the hardware you need, the total cost, difficulty and why each one helps: home automation, personal cloud, ad blocking, media centre, retro gaming, NAS, cameras, AI and more.">
+<meta name="twitter:creator" content="Mohammed Al-Quwaizani">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="apple-touch-icon" href="img/favicon.svg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "12 Ways a Raspberry Pi Helps You \u2014 Practical Uses, Costs &amp; Setup \u2014 Raspberry Pi Guide", "description": "Twelve real uses for a Raspberry Pi with the hardware you need, the total cost, difficulty and why each one helps: home automation, personal cloud, ad blocking, media centre, retro gaming, NAS, cameras, AI and more.", "inLanguage": "en", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "creator": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "Raspberry Pi Guide", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}}}</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span class="hide-sm">Independent guide &middot; Reviewed October 2026</span>
+    </div>
+    <div class="topbar-links">
+      <span class="who">Built by <b>Mohammed Al-Quwaizani</b></span>
+      <a class="hide-sm" href="about.html">About</a>
+      <a class="hide-sm" href="pricing.html#calculator">Calculator</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Raspberry Pi Guide — home">
+      <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+      <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+    </a>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="uses.html" class="active" aria-current="page">Uses</a>
+      <a href="projects.html">Projects</a>
+      <a href="vm.html">VM Lab</a>
+      <a href="pricing.html">Prices</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-tools">
+      <select class="mini" data-currency-select aria-label="Choose currency"></select>
+      <button class="mini" id="themeToggle" data-theme-toggle type="button" aria-label="Toggle theme">&#9728;&#65039;</button>
+      <button class="nav-toggle" data-nav-toggle type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" data-open="false"></div>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> / How It Helps</div>
+    <span class="eyebrow">Twelve real uses</span>
+    <h1>How a Raspberry Pi helps us — in practice</h1>
+    <p class="lead">
+      Forget the marketing. Here are twelve things people actually run on a Raspberry Pi,
+      with the parts you need, the honest total cost, the difficulty, and what you get out of
+      it. Pick one, do it, then pick another. That is how a <span data-usd="15">$15</span>
+      board turns into skills, saved money and a more useful house.
+    </p>
+    <div class="chips" style="margin-top:18px">
+      <span class="chip">Switch currency in the header</span>
+      <span class="chip">Costs = complete setup, not just the board</span>
+      <span class="chip">Difficulty rated 1–5</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDEX ============ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="grid grid-3">
+      <a class="card card--pad-sm reveal" href="#linux" style="text-decoration:none"><strong>1 · Learn Linux &amp; Python</strong><p class="muted" style="margin:6px 0 0">The best $55 computing course you will ever take.</p></a>
+      <a class="card card--pad-sm reveal" href="#home" style="text-decoration:none"><strong>2 · Automate your home</strong><p class="muted" style="margin:6px 0 0">One app for every brand of device.</p></a>
+      <a class="card card--pad-sm reveal" href="#cloud" style="text-decoration:none"><strong>3 · Personal cloud</strong><p class="muted" style="margin:6px 0 0">Your files, your disk, no subscription.</p></a>
+      <a class="card card--pad-sm reveal" href="#pihole" style="text-decoration:none"><strong>4 · Block ads network-wide</strong><p class="muted" style="margin:6px 0 0">Protect every device, no app needed.</p></a>
+      <a class="card card--pad-sm reveal" href="#media" style="text-decoration:none"><strong>5 · Smart TV &amp; media centre</strong><p class="muted" style="margin:6px 0 0">Every format, no ads, no tracking.</p></a>
+      <a class="card card--pad-sm reveal" href="#retro" style="text-decoration:none"><strong>6 · Retro gaming console</strong><p class="muted" style="margin:6px 0 0">Thousands of classics, one box.</p></a>
+      <a class="card card--pad-sm reveal" href="#nas" style="text-decoration:none"><strong>7 · File &amp; backup server</strong><p class="muted" style="margin:6px 0 0">Stop paying for cloud storage.</p></a>
+      <a class="card card--pad-sm reveal" href="#web" style="text-decoration:none"><strong>8 · Website &amp; dev server</strong><p class="muted" style="margin:6px 0 0">Host apps, APIs, staging sites.</p></a>
+      <a class="card card--pad-sm reveal" href="#camera" style="text-decoration:none"><strong>9 · Cameras &amp; NVR</strong><p class="muted" style="margin:6px 0 0">Local motion detection and recording.</p></a>
+      <a class="card card--pad-sm reveal" href="#office" style="text-decoration:none"><strong>10 · School &amp; office PC</strong><p class="muted" style="margin:6px 0 0">Real work on a tiny budget.</p></a>
+      <a class="card card--pad-sm reveal" href="#robotics" style="text-decoration:none"><strong>11 · Electronics &amp; robotics</strong><p class="muted" style="margin:6px 0 0">Where it all started: controlling the real world.</p></a>
+      <a class="card card--pad-sm reveal" href="#ai" style="text-decoration:none"><strong>12 · AI &amp; computer vision</strong><p class="muted" style="margin:6px 0 0">Run models locally on 10 watts.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USE CASES ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid grid-2">
+
+      <!-- 1 -->
+      <article class="card reveal" id="linux">
+        <h3><span class="icon icon--green">🎓</span> 1 · Learn Linux, Python &amp; networking</h3>
+        <p>This is the original purpose of the Pi and still the most valuable one. You get a machine you can destroy and rebuild without consequences, and every command you learn (SSH, permissions, systemd, cron, Docker, nginx) is exactly the same on a $10,000 server in a data centre.</p>
+        <p><strong>What you need:</strong> Pi 4 or Pi 5, PSU, 32 GB microSD, any monitor/TV, keyboard &amp; mouse.</p>
+        <p><strong>Typical total:</strong> <span data-usd="85"></span> · <strong>Difficulty:</strong> 1/5 · <strong>Time:</strong> forever, in a good way</p>
+        <p><strong>First month plan:</strong></p>
+        <ul>
+          <li>Week 1 — install Raspberry Pi OS, learn the terminal, files, permissions</li>
+          <li>Week 2 — enable SSH, set a static IP, log in from your laptop</li>
+          <li>Week 3 — write Python scripts, schedule them with cron</li>
+          <li>Week 4 — install Docker and run your first container</li>
+        </ul>
+        <p class="muted">Why it helps: these are employable, transferable skills — and the board makes them cheap enough to practise.</p>
+      </article>
+
+      <!-- 2 -->
+      <article class="card reveal" id="home">
+        <h3><span class="icon icon--blue">🏠</span> 2 · Automate your home with Home Assistant</h3>
+        <p>Home Assistant turns the Pi into the brain of your house. It speaks to thousands of devices — Wi-Fi plugs, Zigbee sensors, Philips Hue, Xiaomi, Sonoff, air conditioners via IR, cameras, doorbells — and puts them all on one dashboard with automations and voice control.</p>
+        <p><strong>What you need:</strong> Pi 5 (4 GB is fine), PSU, 64 GB SD or SSD, a Zigbee USB stick if you want battery sensors.</p>
+        <p><strong>Typical total:</strong> <span data-usd="160"></span> plus devices · <strong>Difficulty:</strong> 2/5 · <strong>Time:</strong> one evening</p>
+        <p><strong>Automations people actually build:</strong></p>
+        <ul>
+          <li>"If nobody is home and it is after sunset, turn off every light and set the AC to eco."</li>
+          <li>"If the bedroom temperature drops below 16 °C, start the heater."</li>
+          <li>"Send me a phone notification with a photo when the front door camera sees a person."</li>
+          <li>"Warn me before the water tank or gas cylinder runs empty."</li>
+        </ul>
+        <p class="muted">Everything runs locally: it keeps working when the internet or the vendor's cloud goes down, and your habits stay in your house.</p>
+      </article>
+
+      <!-- 3 -->
+      <article class="card reveal" id="cloud">
+        <h3><span class="icon">☁️</span> 3 · Your own personal cloud (Nextcloud)</h3>
+        <p>Nextcloud gives you Google-Drive-style file sync, photo backup from your phone, calendars, contacts, notes, shared folders and even document editing — on hardware you own, for one payment instead of a monthly bill.</p>
+        <p><strong>What you need:</strong> Pi 5 · 4 GB or 8 GB, NVMe SSD via M.2 HAT+ (or a USB 3.0 SSD), PSU, case.</p>
+        <p><strong>Typical total:</strong> <span data-usd="200"></span> for 500 GB of private storage · <strong>Difficulty:</strong> 3/5 · <strong>Time:</strong> 2 hours</p>
+        <p><strong>The maths:</strong> 2 TB of commercial cloud storage costs roughly <span data-usd="120">$120</span> per year, forever. A Pi plus a 1 TB SSD costs about <span data-usd="230"></span> once. After two years it is cheaper — and after four you have saved a lot, with zero privacy questions.</p>
+        <p class="muted">Add Tailscale or WireGuard and you can reach your files from anywhere in the world as if you were at home.</p>
+      </article>
+
+      <!-- 4 -->
+      <article class="card reveal" id="pihole">
+        <h3><span class="icon icon--amber">🛡️</span> 4 · Block ads and trackers for the whole house</h3>
+        <p>Pi-hole is a DNS server that answers "this is an ad server" with nothing. Every phone, TV, tablet and computer on your network instantly loads pages faster and stops leaking data — without installing anything on those devices.</p>
+        <p><strong>What you need:</strong> Pi Zero 2 W or any spare Pi, PSU, 16 GB SD.</p>
+        <p><strong>Typical total:</strong> <span data-usd="35"></span> · <strong>Difficulty:</strong> 2/5 · <strong>Time:</strong> 45 minutes</p>
+        <ul>
+          <li>Typical result: 15–30 % of all DNS requests blocked, in the tens of thousands per day</li>
+          <li>Also blocks ads inside mobile apps, which browser extensions cannot</li>
+          <li>Optionally pair with Unbound for a completely private DNS resolver</li>
+        </ul>
+        <p class="muted">Why it helps: faster browsing, less tracking, less malware, and you finally see how much of the modern web is advertising machinery.</p>
+      </article>
+
+      <!-- 5 -->
+      <article class="card reveal" id="media">
+        <h3><span class="icon icon--violet">📺</span> 5 · Turn any TV into a smart media centre</h3>
+        <p>Install LibreELEC (Kodi) or use VLC and your TV can play literally anything: MKV files, subtitles, network shares, USB drives, live TV with a tuner stick, and streaming add-ons. No "this app is not available in your country", no forced updates that break the remote, no ads.</p>
+        <p><strong>What you need:</strong> Pi 4 · 2 GB or Pi 5, PSU, microSD, HDMI cable; optionally an IR remote or a phone app as the remote.</p>
+        <p><strong>Typical total:</strong> <span data-usd="70"></span> · <strong>Difficulty:</strong> 1/5 · <strong>Time:</strong> 30 minutes</p>
+        <ul>
+          <li>Hardware video decoding means smooth 1080p and good 4K on the Pi 5</li>
+          <li>CEC support: your TV remote controls Kodi</li>
+          <li>Pair it with the NAS project below and you have your own Netflix of files you own</li>
+        </ul>
+        <p class="muted">Bonus: the same Pi can be a digital sign — display a dashboard, a shop menu, a timetable or a photo slideshow 24/7.</p>
+      </article>
+
+      <!-- 6 -->
+      <article class="card reveal" id="retro">
+        <h3><span class="icon icon--green">🕹️</span> 6 · Retro gaming console</h3>
+        <p>RetroPie, Lakka or Batocera packages emulators for arcade machines, NES, SNES, Mega Drive, Game Boy, PlayStation 1, N64, Dreamcast, PSP and more — with a controller-friendly interface and box art, on your TV.</p>
+        <p><strong>What you need:</strong> Pi 4 or Pi 5, PSU, microSD 32 GB+, 2 USB or Bluetooth gamepads, HDMI.</p>
+        <p><strong>Typical total:</strong> <span data-usd="130"></span> with two controllers · <strong>Difficulty:</strong> 2/5 · <strong>Time:</strong> 1 hour</p>
+        <ul>
+          <li>Pi 4 handles everything up to PS1, and most N64/Dreamcast titles</li>
+          <li>Pi 5 (with active cooler) is noticeably better at N64, Saturn and PSP</li>
+          <li>Use only games you legally own — ROMs of copyrighted titles are your responsibility</li>
+        </ul>
+        <p class="muted">Why it helps: it is the cheapest, easiest way to learn how emulation, storage images and controllers work — and it is genuinely fun for a whole family.</p>
+      </article>
+
+      <!-- 7 -->
+      <article class="card reveal" id="nas">
+        <h3><span class="icon icon--blue">🗄️</span> 7 · File, backup and document server</h3>
+        <p>A Raspberry Pi with one or two USB/NVMe disks becomes a Network Attached Storage: shared folders for every device, automatic phone photo backup, Time Machine targets for Macs, and scheduled rsync copies so a dead drive never means lost photos.</p>
+        <p><strong>What you need:</strong> Pi 5 · 4/8 GB, M.2 HAT+ with NVMe, powered USB hub or external PSU for spinning disks, case with fan.</p>
+        <p><strong>Typical total:</strong> <span data-usd="230"></span> with 1 TB · <strong>Difficulty:</strong> 3/5 · <strong>Time:</strong> 2–3 hours</p>
+        <ul>
+          <li>Samba/SMB shares that appear in Windows Explorer and macOS Finder</li>
+          <li>Nightly <code>rsync</code> mirror to a second disk = a real backup</li>
+          <li>Add Jellyfin for a proper streaming library with posters and subtitles</li>
+        </ul>
+        <p class="muted">Honest warning: a Pi is not a RAID server for a business. For family photos and documents, with a second copy somewhere else, it is excellent.</p>
+      </article>
+
+      <!-- 8 -->
+      <article class="card reveal" id="web">
+        <h3><span class="icon icon--blue">🌐</span> 8 · Website, API and development server</h3>
+        <p>Run nginx, Node.js, Python/FastAPI, PostgreSQL or MySQL, Redis, and your own CI runner in Docker containers. Perfect for learning modern deployment, for staging sites before they go live, for internal tools, and for hosting a small personal site behind Cloudflare.</p>
+        <p><strong>What you need:</strong> Pi 5 · 8 GB recommended, NVMe SSD for database performance, 27 W PSU, active cooling.</p>
+        <p><strong>Typical total:</strong> <span data-usd="200"></span> · <strong>Difficulty:</strong> 3/5 · <strong>Time:</strong> an afternoon</p>
+        <ul>
+          <li>Docker Compose stacks: web + database + reverse proxy with HTTPS</li>
+          <li>Git server (Gitea/Forgejo) with your own repositories</li>
+          <li>Scheduled jobs, webhooks, scrapers, monitoring dashboards (Grafana + Prometheus)</li>
+          <li>Minecraft or Valheim server for friends (Minecraft plays well with 4–8 players on a Pi 5)</li>
+        </ul>
+        <p class="muted">Why it helps: you learn the exact skills cloud engineers are paid for, without a monthly hosting bill.</p>
+      </article>
+
+      <!-- 9 -->
+      <article class="card reveal" id="camera">
+        <h3><span class="icon icon--amber">📷</span> 9 · Cameras, security and monitoring</h3>
+        <p>With the Camera Module 3 or the AI Camera, a Pi becomes a motion-detecting recorder that keeps footage on your own disk. Use <strong>Frigate</strong> with person/vehicle detection, or motionEyeOS for a simple multi-camera view.</p>
+        <p><strong>What you need:</strong> Pi 5 (or Pi 4 for light use), Camera Module 3 <span data-usd="25">$25</span> or AI Camera <span data-usd="70">$70</span>, ribbon cable, 64 GB+ storage, weatherproof enclosure for outdoor use.</p>
+        <p><strong>Typical total:</strong> <span data-usd="130"></span> per camera · <strong>Difficulty:</strong> 3/5 · <strong>Time:</strong> 2 hours</p>
+        <ul>
+          <li>Detects people only, so you do not get 400 alerts from a moving tree</li>
+          <li>Records 24/7 to disk with automatic retention rules</li>
+          <li>No monthly subscription, no footage leaving the house</li>
+        </ul>
+        <p class="muted">Also used for: time-lapse of a construction site, plant growth monitoring, 3D-printed bird feeder cameras, and printing-progress cameras on 3D printers.</p>
+      </article>
+
+      <!-- 10 -->
+      <article class="card reveal" id="office">
+        <h3><span class="icon">💼</span> 10 · A working desktop for school or office</h3>
+        <p>Browsing with hardware acceleration, LibreOffice for Word/Excel/PowerPoint files, PDF reading, email, printing, Zoom-class video calls (1080p with the Pi 5), note-taking, coding, and remote desktop into other machines. For most schoolwork and clerical work that is genuinely enough.</p>
+        <p><strong>What you need:</strong> Pi 5 · 8 GB, PSU, NVMe SSD (big daily-life improvement over an SD card), case with fan, any monitor/keyboard/mouse.</p>
+        <p><strong>Typical total:</strong> <span data-usd="250"></span> complete, or <span data-usd="120"></span> for the Pi 500 kit · <strong>Difficulty:</strong> 1/5 · <strong>Time:</strong> 20 minutes</p>
+        <ul>
+          <li>Idle power 3 W instead of 60–150 W for a desktop tower</li>
+          <li>Silent, tiny, and cheap enough to keep a spare</li>
+          <li>Perfect for a shared family computer or a classroom of ten</li>
+        </ul>
+        <p class="muted">Be realistic: heavy video editing, modern 3D games and Windows-only professional software are not what this is for.</p>
+      </article>
+
+      <!-- 11 -->
+      <article class="card reveal" id="robotics">
+        <h3><span class="icon icon--violet">🤖</span> 11 · Electronics, robots and real-world control</h3>
+        <p>This is the part a laptop simply cannot do. GPIO pins plus the Pico let you read sensors and drive things: motors, relays, solenoids, stepper drivers, servos, LED strips, pumps, buzzers and displays — with libraries already written for almost every component on sale.</p>
+        <p><strong>What you need:</strong> Pico 2 <span data-usd="5">$5</span> or Pi 5 with a breadboard kit; sensors and motors as your project requires.</p>
+        <p><strong>Typical starter total:</strong> <span data-usd="45"></span> (Pico + breadboard + jumpers + LEDs + sensors) · <strong>Difficulty:</strong> 2/5 to start, 5/5 for serious robots</p>
+        <ul>
+          <li>Starter builds: temperature logger, plant watering, ultrasonic parking sensor, servo cat feeder</li>
+          <li>Intermediate: line-following robot, CNC/3D-printer control, home energy meter reading</li>
+          <li>Serious: agricultural monitoring, machine retrofits, industrial data collection with a Compute Module</li>
+        </ul>
+        <p class="muted">Why it helps: students who build these become the engineers companies fight over. Portfolios beat certificates.</p>
+      </article>
+
+      <!-- 12 -->
+      <article class="card reveal" id="ai">
+        <h3><span class="icon icon--amber">🧠</span> 12 · AI and computer vision at the edge</h3>
+        <p>The Pi 5 plus the AI HAT+ or AI Camera runs neural networks locally: face and object detection, licence-plate reading, pose estimation, anomaly detection in factories, and small language models (via Ollama) for chat or document summarising — on about 10 watts, with data that never leaves the building.</p>
+        <p><strong>What you need:</strong> Pi 5 · 8/16 GB, AI HAT+ (13 or 26 TOPS) or AI Camera, active cooling, NVMe storage.</p>
+        <p><strong>Typical total:</strong> <span data-usd="260"></span> · <strong>Difficulty:</strong> 4/5 · <strong>Time:</strong> a weekend per project</p>
+        <ul>
+          <li>Camera projects: counting people, reading meters, detecting safety gear, sorting objects</li>
+          <li>Language projects: local chat assistant, voice transcription with Whisper, OCR of documents</li>
+          <li>It is also the cheapest way to learn how model deployment actually works: quantisation, latency, memory, accuracy trade-offs</li>
+        </ul>
+        <p class="muted">Reality check: this is edge AI, not GPT-scale training. But "small model, real device, real data" is exactly what most industrial AI jobs involve.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--tight" id="photos-uses-1">
+  <div class="container">
+  <div class="gallery gallery-3">
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="RAIL P ( RAIL.PHOTOGRAPHY )" data-license="CC0" data-license-url="http://creativecommons.org/publicdomain/zero/1.0/deed.en" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_4_on_a_network_switch.jpg"><img src="img/pi4-network.jpg" alt="Server duty" width="1280" height="851" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Server duty</b> A Raspberry Pi 4 cabled into a switch, quietly replacing a monthly hosting bill.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="Gareth Halfacree from Bradford, UK" data-license="CC BY-SA 2.0" data-license-url="https://creativecommons.org/licenses/by-sa/2.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_Camera_Module_-_Fitted_%2814675164282%29.jpg"><img src="img/camera-fitted.jpg" alt="Camera build" width="1280" height="851" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Camera build</b> Seating a camera ribbon correctly the first time saves an afternoon of debugging.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="Maskaravivek" data-license="CC BY-SA 4.0" data-license-url="https://creativecommons.org/licenses/by-sa/4.0" data-source="https://commons.wikimedia.org/wiki/File%3AGPIO_board_with_Raspberry_Pi.jpg"><img src="img/gpio-breadboard.jpg" alt="Electronics" width="1280" height="1707" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Electronics</b> Sensors, motors and relays all connect through the 40-pin header.</figcaption></figure>
+  </div>
+  </div>
+</section>
+
+<!-- ============ SUMMARY TABLE ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cheat sheet</span>
+      <h2>All twelve at a glance</h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Use case</th><th>Best model</th><th>Why</th><th>Complete cost</th><th>Difficulty</th></tr></thead>
+        <tbody>
+          <tr><td>Learn Linux &amp; Python</td><td>Pi 4 · 4 GB</td><td>Cheapest path, fully supported</td><td data-usd="85"></td><td>1/5</td></tr>
+          <tr><td>Home automation</td><td>Pi 5 · 4 GB</td><td>24/7 reliability, enough RAM</td><td data-usd="160"></td><td>2/5</td></tr>
+          <tr><td>Personal cloud</td><td>Pi 5 · 4 GB + SSD</td><td>Disk I/O and RAM matter</td><td data-usd="200"></td><td>3/5</td></tr>
+          <tr><td>Ad blocking</td><td>Zero 2 W</td><td>Needs almost nothing</td><td data-usd="35"></td><td>2/5</td></tr>
+          <tr><td>Media centre</td><td>Pi 4 · 2 GB</td><td>Hardware video decode is enough</td><td data-usd="70"></td><td>1/5</td></tr>
+          <tr><td>Retro gaming</td><td>Pi 4 / Pi 5</td><td>Emulation is CPU-hungry</td><td data-usd="130"></td><td>2/5</td></tr>
+          <tr><td>NAS &amp; backups</td><td>Pi 5 · 4 GB + NVMe</td><td>USB 3.0 and RAM cache</td><td data-usd="230"></td><td>3/5</td></tr>
+          <tr><td>Web / dev server</td><td>Pi 5 · 8 GB + NVMe</td><td>Docker + database load</td><td data-usd="200"></td><td>3/5</td></tr>
+          <tr><td>Security cameras</td><td>Pi 5 · 4 GB</td><td>Video analysis needs CPU/GPU</td><td data-usd="130"></td><td>3/5</td></tr>
+          <tr><td>Desktop for work</td><td>Pi 5 · 8 GB / Pi 500</td><td>Needs smooth browser + SSD</td><td data-usd="250"></td><td>1/5</td></tr>
+          <tr><td>Robotics &amp; sensors</td><td>Pico 2 / Pi 4</td><td>Real-time control, GPIO</td><td data-usd="45"></td><td>2–5/5</td></tr>
+          <tr><td>Edge AI</td><td>Pi 5 · 8 GB + AI HAT+</td><td>Neural accelerator + RAM</td><td data-usd="260"></td><td>4/5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--tight" id="photos-uses-2">
+  <div class="container">
+  <div class="gallery gallery-2">
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="SimonWaldherr" data-license="CC BY 4.0" data-license-url="https://creativecommons.org/licenses/by/4.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_%28vertical%29.jpg"><img src="img/pi5-vertical.jpg" alt="Tiny and silent" width="1280" height="1600" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Tiny and silent</b> Running 24 hours a day at roughly three watts.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="Florian Knodt - https://www.flickr.com/photos/adlerweb/" data-license="CC BY 2.0" data-license-url="https://creativecommons.org/licenses/by/2.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_3_silkscreen_logo_and_GPIO_header.jpg"><img src="img/gpio-header.jpg" alt="Real pins, real limits" width="1280" height="720" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Real pins, real limits</b> 3.3 V logic, a few milliamps per pin — and no discrete GPU anywhere.</figcaption></figure>
+  </div>
+  </div>
+</section>
+
+<!-- ============ HONEST LIMITS ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="reveal">
+        <span class="eyebrow">Be realistic</span>
+        <h2>What a Raspberry Pi is <em>not</em> good at</h2>
+        <ul>
+          <li><strong>Heavy gaming.</strong> No discrete GPU, no Windows game ecosystem. Only emulation and indie titles.</li>
+          <li><strong>Professional video editing.</strong> 4K timeline editing will frustrate you.</li>
+          <li><strong>Windows-only software.</strong> AutoCAD, Adobe CC, most accounting packages — forget it.</li>
+          <li><strong>Business-critical RAID arrays.</strong> USB buses and single NVMe slots are not enterprise storage.</li>
+          <li><strong>Anything needing a GPU for AI training.</strong> Inference yes, training no.</li>
+          <li><strong>Cheap SD-card reliability.</strong> A cheap card will corrupt your system. Buy A1/A2 from a real brand.</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">The real payoff</span>
+        <h2>Why it still beats buying a cheap laptop</h2>
+        <div class="table-wrap">
+          <table style="min-width:auto">
+            <thead><tr><th>&nbsp;</th><th>Raspberry Pi 5 setup</th><th>Budget laptop</th></tr></thead>
+            <tbody>
+              <tr><td>Price</td><td><span data-usd="250"></span> complete</td><td><span data-usd="400"></span>+</td></tr>
+              <tr><td>Power use</td><td>3–12 W</td><td>30–60 W</td></tr>
+              <tr><td>Repairable</td><td><span class="tick">✓</span> swap any part</td><td>Mostly sealed</td></tr>
+              <tr><td>Controls electronics</td><td><span class="tick">✓</span> GPIO, I²C, SPI, cameras</td><td><span class="cross">✗</span></td></tr>
+              <tr><td>Runs 24/7 as a server</td><td><span class="tick">✓</span> silently</td><td>Possible but wasteful</td></tr>
+              <tr><td>Teaches you the system</td><td><span class="tick">✓</span> completely</td><td>Hidden behind a GUI</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:14px">A Pi is not "a cheap laptop". It is a machine you understand, that never gets hot in your bag, and that can also run your house.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK WINS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Weekend wins</span>
+      <h2>Six more things you can do in an afternoon</h2>
+    </div>
+    <div class="grid grid-3">
+      <article class="card card--pad-sm reveal"><h3 style="font-size:1.05rem">🖨️ Wi-Fi printer server</h3><p class="muted">Share an old USB printer to every phone and laptop with CUPS. Cost: whatever Pi you have. Time: 30 min.</p></article>
+      <article class="card card--pad-sm reveal"><h3 style="font-size:1.05rem">🌦️ Weather station</h3><p class="muted">BME280 sensor + Pi or Pico: temperature, humidity, pressure, logged to a web dashboard. Cost: <span data-usd="20">$20</span> extra.</p></article>
+      <article class="card card--pad-sm reveal"><h3 style="font-size:1.05rem">🔒 WireGuard VPN</h3><p class="muted">Access your home network and files securely from anywhere. Cost: <span data-usd="0">$0</span> extra. Time: 45 min.</p></article>
+      <article class="card card--pad-sm reveal"><h3 style="font-size:1.05rem">🎵 Whole-house audio</h3><p class="muted">Snapcast or Mopidy multi-room streaming with old speakers and a cheap amp HAT.</p></article>
+      <article class="card card--pad-sm reveal"><h3 style="font-size:1.05rem">📊 Network monitor</h3><p class="muted">Uptime Kuma + Prometheus so you know the moment your internet or a server dies — with alerts.</p></article>
+      <article class="card card--pad-sm reveal"><h3 style="font-size:1.05rem">🛰️ LoRa / long-range sensors</h3><p class="muted">Send sensor data from a farm or remote building kilometres away without Wi-Fi or GSM fees.</p></article>
+    </div>
+    <p class="center" style="margin-top:30px"><a class="btn btn-primary" href="projects.html">Browse 18 buildable projects with part lists →</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+          <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+        </div>
+        <p class="footer-note">
+          An independent, ad-free and tracker-free educational guide to single-board computing.
+          Prices are indicative US list prices converted live into your currency so readers
+          everywhere can plan a budget.
+        </p>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="models.html">Models &amp; specifications</a></li>
+          <li><a href="uses.html">12 ways a Pi helps</a></li>
+          <li><a href="projects.html">20 projects with part lists</a></li>
+          <li><a href="vm.html">Virtual machine lab</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Buying</h4>
+        <ul>
+          <li><a href="pricing.html">Full price list</a></li>
+          <li><a href="pricing.html#kits">Kits &amp; bundles</a></li>
+          <li><a href="pricing.html#calculator">Build calculator</a></li>
+          <li><a href="pricing.html#cloud">Pi vs cloud hosting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community projects</h4>
+        <ul>
+          <li><a href="https://www.home-assistant.io/">Home Assistant</a></li>
+          <li><a href="https://pi-hole.net/">Pi-hole</a></li>
+          <li><a href="https://nextcloud.com/">Nextcloud</a></li>
+          <li><a href="https://frigate.video/">Frigate NVR</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-credit">
+      <div class="made-by">
+        <span class="avatar" aria-hidden="true">MA</span>
+        <span>Website designed, written and developed by <b>Mohammed Al-Quwaizani</b></span>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="about.html">About the author &#8594;</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Raspberry Pi Guide &middot; Free to reuse for teaching with attribution.</span>
+      <span>Prices reviewed October 2026 &middot; verify with your local reseller before buying.</span>
+    </div>
+    <p class="footer-legal">
+      Raspberry Pi is a trademark of Raspberry Pi Ltd. This site is an independent educational
+      project and is not affiliated with, sponsored by or endorsed by Raspberry Pi Ltd. Product
+      names are used for identification only. Nothing on this site is an offer or a quotation.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

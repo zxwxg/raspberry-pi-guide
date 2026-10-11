@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!-- Site designed and built by Mohammed Al-Quwaizani -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raspberry Pi FAQ — 35 Beginner Questions Answered Honestly</title>
+<meta name="description" content="Thirty-five real beginner questions about Raspberry Pi: which to buy, what it can and cannot do, Windows, gaming, AI, SD cards, power, 24/7 reliability, remote access, kids and jobs. Plus a plain-English glossary.">
+<meta name="author" content="Mohammed Al-Quwaizani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071023">
+<meta name="application-name" content="Raspberry Pi Guide">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Raspberry Pi Guide">
+<meta property="og:title" content="Raspberry Pi FAQ — 30 Beginner Questions Answered Honestly">
+<meta property="og:description" content="Thirty real beginner questions about Raspberry Pi: which to buy, what it can and cannot do, Windows, gaming, AI, SD cards, power, 24/7 reliability, remote access, kids and jobs. Plus a plain-English glossary.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Raspberry Pi FAQ — 30 Beginner Questions Answered Honestly">
+<meta name="twitter:description" content="Thirty real beginner questions about Raspberry Pi: which to buy, what it can and cannot do, Windows, gaming, AI, SD cards, power, 24/7 reliability, remote access, kids and jobs. Plus a plain-English glossary.">
+<meta name="twitter:creator" content="Mohammed Al-Quwaizani">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="apple-touch-icon" href="img/favicon.svg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Raspberry Pi FAQ \u2014 30 Beginner Questions Answered Honestly", "description": "Thirty real beginner questions about Raspberry Pi: which to buy, what it can and cannot do, Windows, gaming, AI, SD cards, power, 24/7 reliability, remote access, kids and jobs. Plus a plain-English glossary.", "inLanguage": "en", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "creator": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "Raspberry Pi Guide", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "name": "Raspberry Pi FAQ", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani"}, "mainEntity": [{"@type": "Question", "name": "What is a Raspberry Pi, in one sentence?", "acceptedAnswer": {"@type": "Answer", "text": "A small, cheap, low-power computer on a single board that runs Linux and can also control electronics through its GPIO pins."}}, {"@type": "Question", "name": "Do I need to know programming before I start?", "acceptedAnswer": {"@type": "Answer", "text": "No. You can browse, watch video, write documents and use it like any PC. Then, when you are curious, Python and Scratch are installed and ready. Most people learn more in their first month of owning a Pi than in a year of reading about programming."}}, {"@type": "Question", "name": "Which model should I buy first?", "acceptedAnswer": {"@type": "Answer", "text": "Absolute beginner, tight budget: Pi 4 \u00b7 4 GB ( $55 + $40 of extras). Want a real desktop and future-proof: Pi 5 \u00b7 8 GB ( $80 ). Just electronics and motors: Pico 2 ( $5 ) plus a breadboard kit. Kids or a school: Pi 500 kit ( $120 ) \u2014 nothing to assemble wrongly. Zero-effort home server: Pi 5 \u00b7 4 GB\u2026"}}, {"@type": "Question", "name": "How long does the first setup take?", "acceptedAnswer": {"@type": "Answer", "text": "About 20\u201330 minutes if everything is in the box: install Raspberry Pi Imager, write the OS to the card (3\u20135 min), set username/Wi-Fi/SSH in Imager's settings window, insert the card, power on, wait for the first boot to finish. With the Desktop edition (x86) in a virtual machine, add 15 minutes."}}, {"@type": "Question", "name": "Do I need internet, a monitor and a keyboard?", "acceptedAnswer": {"@type": "Answer", "text": "Internet: needed for updates and packages, not for running most projects. Monitor/keyboard: only for the very first configuration \u2014 and even that is optional, because Imager can pre-set Wi-Fi and SSH so you can control the Pi persistently from your normal computer. That mode is called headless ."}}, {"@type": "Question", "name": "Can I use my TV as the screen?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 that is exactly what most media-centre and retro-gaming builds do. Any HDMI TV works. For a Pi 4/5 remember you need a micro-HDMI to HDMI cable, not a normal one."}}, {"@type": "Question", "name": "Why is the price different in my country?", "acceptedAnswer": {"@type": "Answer", "text": "Import duty, VAT/local sales tax, shipping and local distributor margins. In some countries the same 8 GB Pi 5 costs 25\u201340 % more than the US list price. Compare the total delivered price from a local approved reseller against importing directly \u2014 importing looks cheaper until customs adds its\u2026"}}, {"@type": "Question", "name": "Is it cheaper to buy a kit or the parts separately?", "acceptedAnswer": {"@type": "Answer", "text": "Kits usually win on total cost because they bundle shipping and bundle accessories at volume prices. Parts separately win when you already own a keyboard, monitor, microSD cards or a suitable power supply. Rule: count the accessories you actually need ( $12 PSU, $14 SD, $9 cable, $5 cooler) before\u2026"}}, {"@type": "Question", "name": "Are cheap boards on online marketplaces genuine?", "acceptedAnswer": {"@type": "Answer", "text": "Often not, and the accessories are worse. The three classic scams are: rebadged older models sold as new, power supplies that claim 5 A but deliver 3 A, and microSD cards with fake capacity. Buy boards from the official reseller list, and verify any card you buy with H2testw or F3."}}, {"@type": "Question", "name": "Do I have to pay for the operating system or software?", "acceptedAnswer": {"@type": "Answer", "text": "No. Raspberry Pi OS, the Imager tool, Ubuntu, LibreELEC, Home Assistant and essentially every library you will use are free and open source. There is no licence, no subscription and no watermark. The only paid things are optional: extra hardware, and third-party services you might choose to connect\u2026"}}, {"@type": "Question", "name": "What is the true minimum I must buy?", "acceptedAnswer": {"@type": "Answer", "text": "Four items \u2014 nothing else: Board \u2014 from $35 Power supply \u2014 $8 microSD card \u2014 $8 Any HDMI screen + USB keyboard/mouse you already own That is about $51 for a real, working computer \u2014 and adding a case plus a cooler is only $10 \u2013 $15 more."}}, {"@type": "Question", "name": "What operating systems can it run?", "acceptedAnswer": {"@type": "Answer", "text": "Raspberry Pi OS (Debian-based, recommended) \u2014 Desktop or Lite Ubuntu Server/Desktop ARM64 \u2014 good for developers Debian and Alpine \u2014 minimal servers LibreELEC / OSMC \u2014 Kodi media centres RetroPie / Batocera / Lakka \u2014 retro gaming Home Assistant OS \u2014 smart-home appliance DietPi \u2014 tiny, ultra-light,\u2026"}}, {"@type": "Question", "name": "Can I run Windows on it?", "acceptedAnswer": {"@type": "Answer", "text": "Windows 11 on ARM can be installed on a Pi 4/5 but it is unofficial, slow, needs a lot of fiddling and has no GPU acceleration. Windows 10 IoT Core is discontinued. If you need Windows, use a cheap x86 mini-PC instead \u2014 the Pi is not the right tool. Linux is where the Pi shines."}}, {"@type": "Question", "name": "Can it run Android apps?", "acceptedAnswer": {"@type": "Answer", "text": "There are community Android builds (LineageOS, KonstaKANG) that work on the Pi 4/5, and they are fine for experimentation, kiosk displays and some apps. They are not certified, many apps lack ARM support, and streaming apps with DRM rarely work. Expect a project, not a phone replacement."}}, {"@type": "Question", "name": "Is Raspberry Pi OS just normal Linux?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 it is Debian with Raspberry Pi's tooling. Every Linux skill transfers both ways: if you learn apt , systemd , permissions and networking on a Pi, you can administer a real server. The only additions are hardware-specific tools like raspi-config , vcgencmd , rpicam and the GPIO libraries."}}, {"@type": "Question", "name": "Can I copy my whole setup to a new board later?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in three ways: (1) move the microSD/NVMe across (it boots, since the OS is portable between Pi models), (2) restore a full disk image you made earlier with dd or Win32DiskImager, or (3) keep your configuration in docker-compose.yml files and an Ansible/script setup so a new board is a fresh\u2026"}}, {"@type": "Question", "name": "Can it play games?", "acceptedAnswer": {"@type": "Answer", "text": "Emulated games: yes, up to roughly PlayStation 1 reliably on a Pi 4, with N64/Dreamcast/PSP on a Pi 5. Native games: only lightweight 2D indie titles and open-source games (SuperTuxKart, Minetest). Modern 3D games: no. There is no discrete GPU and no x86 game ecosystem."}}, {"@type": "Question", "name": "Can it run a Minecraft server?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, surprisingly well. A Pi 5 with 8 GB runs a Java PaperMC server for roughly 4\u20138 players with modest view distance, and a Bedrock server runs fine too. Use an NVMe or USB SSD, not a microSD, and expect to tune memory settings. Large public servers with mods and plugins are out of scope."}}, {"@type": "Question", "name": "Can it run AI / ChatGPT-style models?", "acceptedAnswer": {"@type": "Answer", "text": "Local small models: yes. With Ollama on a Pi 5 (8\u201316 GB) you can run 1\u20133 B parameter models for basic chat, and Whisper for speech-to-text. With the AI HAT+ (13/26 TOPS) you get good real-time computer vision. Training models: no. Also remember you can always just call a cloud API for the heavy\u2026"}}, {"@type": "Question", "name": "Can it power a 3.5\" hard drive?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly \u2014 3.5\" drives need 12 V, which the Pi does not supply. Use a powered USB enclosure or an external power supply for the disk. 2.5\" USB drives and SSDs generally work if your power supply is official and strong enough, but a powered hub is the safe answer for multiple disks."}}, {"@type": "Question", "name": "Which microSD card, and how long do they last?", "acceptedAnswer": {"@type": "Answer", "text": "Buy Class 10 / U3, A1 or A2, from SanDisk Extreme, Samsung EVO/Pro, Kingston Canvas or similar. Avoid unbranded cards entirely. Lifetime: a card writing constantly (a database, Docker logs, surveillance) can degrade in months. A card in a mostly-read workload lasts years. This is why the standard\u2026"}}, {"@type": "Question", "name": "How many USB devices and disks can I attach?", "acceptedAnswer": {"@type": "Answer", "text": "The Pi 5 has 2\u00d7 USB 3.0 and 2\u00d7 USB 2.0 (plus PCIe for NVMe). A powered USB hub lets you add many devices. The real limits are power (total USB current is bounded by the supply) and bandwidth (USB 3.0 \u2248 5 Gbps shared). For a media library, that is plenty \u2014 for a busy database server, it is not."}}, {"@type": "Question", "name": "How do I use it with no monitor attached (headless)?", "acceptedAnswer": {"@type": "Answer", "text": "Three steps, and you never need a screen: In Raspberry Pi Imager, open settings (gear icon) and set hostname, username, password, Wi-Fi and \"Enable SSH\". Write the card, insert it, power on the Pi, wait 2 minutes. From your PC: ssh you@hostname.local (or the IP address). If you must enable SSH\u2026"}}, {"@type": "Question", "name": "Can I reach it from outside my home?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and you should do it in the safe order: Tailscale or WireGuard (private tunnel \u2014 nothing is exposed to the internet) \u2192 Cloudflare Tunnel (publish a web app without opening ports) \u2192 port forwarding (works, but exposes your home network; only do it for a specific service, with HTTPS and strong\u2026"}}, {"@type": "Question", "name": "Could I host a real public website on it?", "acceptedAnswer": {"@type": "Answer", "text": "Technically yes. Practically, your home internet upload speed, dynamic IP, power cuts and lack of DDoS protection are real limits. Many people host a personal blog or a small internal tool this way with great success (behind Cloudflare), and host anything with paying customers on a proper VPS. Use\u2026"}}, {"@type": "Question", "name": "Can it replace my Wi-Fi router?", "acceptedAnswer": {"@type": "Answer", "text": "A Pi running OpenWrt can act as a router, DNS server, VPN gateway, firewall or traffic monitor. It is a great addition to your router (Pi-hole, VPN, monitoring) and a legitimate option as a secondary router in a lab. As your only router, you need USB Ethernet adapters and you accept a single point\u2026"}}, {"@type": "Question", "name": "How much electricity does it really use?", "acceptedAnswer": {"@type": "Answer", "text": "Pi Zero 2 W: 0.4\u20131.5 W. Pi 4: 2.5\u20137 W. Pi 5: 2.5\u20133.5 W idle, up to ~12 W under sustained load with peripherals. Running a Pi 5 24/7 at 5 W average costs roughly 3.6 kWh per month \u2014 around $1 in most countries. A desktop tower doing the same job would use 10\u201330\u00d7 more. Test your own numbers with the\u2026"}}, {"@type": "Question", "name": "Can it run 24/7 for years?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 this is one of the most common uses. Offices, factories and hobbyists run Pi-based systems for years. Do these four things: use the official power supply, keep it cool (below ~70 \u00b0C; heatsink or fan), boot from NVMe/USB SSD rather than microSD, and keep it away from dust and moisture. Then\u2026"}}, {"@type": "Question", "name": "What happens if the power goes out?", "acceptedAnswer": {"@type": "Answer", "text": "Modern Pi OS uses a journaled filesystem, so it usually recovers. But a power cut mid-write on a microSD card is the classic way to lose a system. Protect it with a small UPS ( $40 \u2013 $80 ) that can run a Pi for hours, enable a clean shutdown triggered by the UPS, and keep an image backup so\u2026"}}, {"@type": "Question", "name": "Does the Pi 5 need a fan?", "acceptedAnswer": {"@type": "Answer", "text": "For desktop use and especially for servers, yes \u2014 the official Active Cooler is $5 and drops sustained temperatures dramatically, keeping the CPU from throttling. A Pi 4 in a ventilated case with heatsinks is usually fine without a fan; a Pi Zero 2 W needs nothing at all."}}, {"@type": "Question", "name": "Is it secure enough for my home network?", "acceptedAnswer": {"@type": "Answer", "text": "As secure as you configure it \u2014 exactly like any Linux server. Minimum: change the default password, use SSH keys instead of passwords, enable automatic security updates ( unattended-upgrades ), and never expose services directly to the internet. Add fail2ban for SSH. Raspberry Pi OS ships with\u2026"}}, {"@type": "Question", "name": "Is it good for children?", "acceptedAnswer": {"@type": "Answer", "text": "It is arguably the best educational computer ever made. Scratch and Python are pre-installed, the Pi 500 is a kid-proof all-in-one, and the Foundation publishes free, classroom-tested project guides for every age. The key is to give them a goal \u2014 a Minecraft server for friends, a plant monitor, a\u2026"}}, {"@type": "Question", "name": "What is a good first project?", "acceptedAnswer": {"@type": "Answer", "text": "Pick something you will use daily, because that is what keeps you going when it breaks: Pi-hole \u2014 45 minutes, everyone in the house benefits Media centre \u2014 30 minutes, immediate payoff every evening Home Assistant \u2014 one evening, genuinely changes how your house works Blinking LED with a Pico \u2014 5\u2026"}}, {"@type": "Question", "name": "Can a Raspberry Pi actually help me get a job?", "acceptedAnswer": {"@type": "Answer", "text": "It can, if you treat it as a lab rather than a toy. The employable paths it feeds directly are Linux/DevOps administration (Docker, nginx, systemd, networking), IoT and embedded development (GPIO, I\u00b2C, SPI, MicroPython), edge AI (model deployment, computer vision) and industrial automation. What\u2026"}}, {"@type": "Question", "name": "Can I try all of this without buying anything?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 that is exactly what the virtual machine guide is for. You can install Raspberry Pi OS on your existing PC for free, learn the desktop, the terminal, SSH, servers and Docker, and only buy a board when you need GPIO, cameras or a permanent always-on machine."}}]}</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span class="hide-sm">Independent guide &middot; Reviewed October 2026</span>
+    </div>
+    <div class="topbar-links">
+      <span class="who">Built by <b>Mohammed Al-Quwaizani</b></span>
+      <a class="hide-sm" href="about.html">About</a>
+      <a class="hide-sm" href="pricing.html#calculator">Calculator</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Raspberry Pi Guide — home">
+      <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+      <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+    </a>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="uses.html">Uses</a>
+      <a href="projects.html">Projects</a>
+      <a href="vm.html">VM Lab</a>
+      <a href="pricing.html">Prices</a>
+      <a href="faq.html" class="active" aria-current="page">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-tools">
+      <select class="mini" data-currency-select aria-label="Choose currency"></select>
+      <button class="mini" id="themeToggle" data-theme-toggle type="button" aria-label="Toggle theme">&#9728;&#65039;</button>
+      <button class="nav-toggle" data-nav-toggle type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" data-open="false"></div>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> / FAQ</div>
+    <span class="eyebrow">35 honest answers</span>
+    <h1>Raspberry Pi questions, answered without hype</h1>
+    <p class="lead">
+      Everything beginners actually ask — including the uncomfortable ones about limits, reliability,
+      money and whether it can replace a normal computer. Jump to a section, or just read it all.
+    </p>
+    <div class="chips" style="margin-top:18px">
+      <a class="chip" href="#basics">Basics</a>
+      <a class="chip" href="#buying">Buying</a>
+      <a class="chip" href="#software">Software</a>
+      <a class="chip" href="#limits">Hardware &amp; limits</a>
+      <a class="chip" href="#network">Remote access</a>
+      <a class="chip" href="#power">Power &amp; reliability</a>
+      <a class="chip" href="#learn">Learning &amp; jobs</a>
+      <a class="chip" href="#glossary">Glossary</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BASICS ============ -->
+
+<section class="section section--tight" id="photos-faq">
+  <div class="container">
+<figure class="photo photo--wide reveal" data-lightbox data-credit="SimonWaldherr" data-license="CC BY-SA 4.0" data-license-url="https://creativecommons.org/licenses/by-sa/4.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_1%2C_Pi_5%2C_Pi_400%2C_Zero_2_and_Pico.jpg"><img src="img/lineup.jpg" alt="Which one?" width="1920" height="1277" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Which one?</b> Budget, speed and size differ across the range — the answers below explain the trade-offs.</figcaption></figure>
+  </div>
+</section>
+
+<section class="section section--tight" id="basics">
+  <div class="container" style="max-width:920px">
+    <h2>Basics</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">What is a Raspberry Pi, in one sentence?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>A small, cheap, low-power computer on a single board that runs Linux and can also control electronics through its GPIO pins.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Do I need to know programming before I start?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>No. You can browse, watch video, write documents and use it like any PC. Then, when you are curious, Python and Scratch are installed and ready. Most people learn more in their first month of owning a Pi than in a year of reading about programming.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Which model should I buy first?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <ul>
+            <li><strong>Absolute beginner, tight budget:</strong> Pi 4 · 4 GB (<span data-usd="55">$55</span> + <span data-usd="40">$40</span> of extras).</li>
+            <li><strong>Want a real desktop and future-proof:</strong> Pi 5 · 8 GB (<span data-usd="80">$80</span>).</li>
+            <li><strong>Just electronics and motors:</strong> Pico 2 (<span data-usd="5">$5</span>) plus a breadboard kit.</li>
+            <li><strong>Kids or a school:</strong> Pi 500 kit (<span data-usd="120">$120</span>) — nothing to assemble wrongly.</li>
+            <li><strong>Zero-effort home server:</strong> Pi 5 · 4 GB + NVMe if you plan Docker, or a Zero 2 W for one small job.</li>
+          </ul>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">How long does the first setup take?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>About 20–30 minutes if everything is in the box: install Raspberry Pi Imager, write the OS to the card (3–5 min), set username/Wi-Fi/SSH in Imager's settings window, insert the card, power on, wait for the first boot to finish. With the Desktop edition (x86) in a virtual machine, add 15 minutes.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Do I need internet, a monitor and a keyboard?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Internet: needed for updates and packages, not for running most projects. Monitor/keyboard: only for the very first configuration — and even that is optional, because Imager can pre-set Wi-Fi and SSH so you can control the Pi persistently from your normal computer. That mode is called <em>headless</em>.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can I use my TV as the screen?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Yes — that is exactly what most media-centre and retro-gaming builds do. Any HDMI TV works. For a Pi 4/5 remember you need a <strong>micro-HDMI</strong> to HDMI cable, not a normal one.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUYING ============ -->
+<section class="section section--alt" id="buying">
+  <div class="container" style="max-width:920px">
+    <h2>Buying &amp; money</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">Why is the price different in my country?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Import duty, VAT/local sales tax, shipping and local distributor margins. In some countries the same 8 GB Pi 5 costs 25–40 % more than the US list price. Compare the <em>total delivered</em> price from a local approved reseller against importing directly — importing looks cheaper until customs adds its share.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Is it cheaper to buy a kit or the parts separately?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Kits usually win on total cost because they bundle shipping and bundle accessories at volume prices. Parts separately win when you already own a keyboard, monitor, microSD cards or a suitable power supply. Rule: <strong>count the accessories you actually need</strong> (<span data-usd="12">$12</span> PSU, <span data-usd="14">$14</span> SD, <span data-usd="9">$9</span> cable, <span data-usd="5">$5</span> cooler) before deciding.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Are cheap boards on online marketplaces genuine?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Often not, and the accessories are worse. The three classic scams are: rebadged older models sold as new, power supplies that claim 5 A but deliver 3 A, and microSD cards with fake capacity. Buy boards from the official reseller list, and verify any card you buy with H2testw or F3.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Do I have to pay for the operating system or software?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>No. Raspberry Pi OS, the Imager tool, Ubuntu, LibreELEC, Home Assistant and essentially every library you will use are free and open source. There is no licence, no subscription and no watermark. The only paid things are optional: extra hardware, and third-party services you might choose to connect (VPN, cloud backup, streaming).</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">What is the true minimum I must buy?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Four items — nothing else:</p>
+          <ul>
+            <li>Board — from <span data-usd="35">$35</span></li>
+            <li>Power supply — <span data-usd="8">$8</span></li>
+            <li>microSD card — <span data-usd="8">$8</span></li>
+            <li>Any HDMI screen + USB keyboard/mouse you already own</li>
+          </ul>
+          <p>That is about <span data-usd="51">$51</span> for a real, working computer — and adding a case plus a cooler is only <span data-usd="10">$10</span>–<span data-usd="15">$15</span> more.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOFTWARE ============ -->
+<section class="section" id="software">
+  <div class="container" style="max-width:920px">
+    <h2>Software &amp; operating systems</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">What operating systems can it run?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <ul>
+            <li><strong>Raspberry Pi OS</strong> (Debian-based, recommended) — Desktop or Lite</li>
+            <li><strong>Ubuntu</strong> Server/Desktop ARM64 — good for developers</li>
+            <li><strong>Debian</strong> and <strong>Alpine</strong> — minimal servers</li>
+            <li><strong>LibreELEC / OSMC</strong> — Kodi media centres</li>
+            <li><strong>RetroPie / Batocera / Lakka</strong> — retro gaming</li>
+            <li><strong>Home Assistant OS</strong> — smart-home appliance</li>
+            <li><strong>DietPi</strong> — tiny, ultra-light, menu-driven setup</li>
+            <li><strong>OpenWrt / pfSense-class</strong> — network appliance duties</li>
+          </ul>
+          <p>You can also write a custom image with <strong>pi-gen</strong>, or use Docker on top of any of them.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can I run Windows on it?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Windows 11 on ARM can be installed on a Pi 4/5 but it is unofficial, slow, needs a lot of fiddling and has no GPU acceleration. Windows 10 IoT Core is discontinued. If you need Windows, use a cheap x86 mini-PC instead — the Pi is not the right tool. Linux is where the Pi shines.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it run Android apps?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>There are community Android builds (LineageOS, KonstaKANG) that work on the Pi 4/5, and they are fine for experimentation, kiosk displays and some apps. They are not certified, many apps lack ARM support, and streaming apps with DRM rarely work. Expect a project, not a phone replacement.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Is Raspberry Pi OS just normal Linux?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Yes — it is Debian with Raspberry Pi's tooling. Every Linux skill transfers both ways: if you learn <code>apt</code>, <code>systemd</code>, permissions and networking on a Pi, you can administer a real server. The only additions are hardware-specific tools like <code>raspi-config</code>, <code>vcgencmd</code>, <code>rpicam</code> and the GPIO libraries.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can I copy my whole setup to a new board later?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Yes, in three ways: (1) move the microSD/NVMe across (it boots, since the OS is portable between Pi models), (2) restore a full disk image you made earlier with <code>dd</code> or Win32DiskImager, or (3) keep your configuration in <code>docker-compose.yml</code> files and an Ansible/script setup so a new board is a fresh install plus one command.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIMITS ============ -->
+<section class="section section--alt" id="limits">
+  <div class="container" style="max-width:920px">
+    <h2>Hardware &amp; limits</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it play games?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Emulated games: yes, up to roughly PlayStation 1 reliably on a Pi 4, with N64/Dreamcast/PSP on a Pi 5. Native games: only lightweight 2D indie titles and open-source games (SuperTuxKart, Minetest). Modern 3D games: no. There is no discrete GPU and no x86 game ecosystem.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it run a Minecraft server?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Yes, surprisingly well. A Pi 5 with 8 GB runs a Java PaperMC server for roughly 4–8 players with modest view distance, and a Bedrock server runs fine too. Use an NVMe or USB SSD, not a microSD, and expect to tune memory settings. Large public servers with mods and plugins are out of scope.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it run AI / ChatGPT-style models?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Local small models: yes. With Ollama on a Pi 5 (8–16 GB) you can run 1–3 B parameter models for basic chat, and Whisper for speech-to-text. With the AI HAT+ (13/26 TOPS) you get good real-time computer vision. Training models: no. Also remember you can always just call a cloud API for the heavy lifting — the Pi is perfectly suited to being the <em>device</em> that uses AI.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it power a 3.5" hard drive?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Not directly — 3.5" drives need 12 V, which the Pi does not supply. Use a powered USB enclosure or an external power supply for the disk. 2.5" USB drives and SSDs generally work if your power supply is official and strong enough, but a powered hub is the safe answer for multiple disks.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Which microSD card, and how long do they last?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Buy Class 10 / U3, A1 or A2, from SanDisk Extreme, Samsung EVO/Pro, Kingston Canvas or similar. Avoid unbranded cards entirely.</p>
+          <p>Lifetime: a card writing constantly (a database, Docker logs, surveillance) can degrade in months. A card in a mostly-read workload lasts years. This is why the standard advice for anything permanent is: <strong>boot from NVMe/USB SSD, keep the SD card only as a recovery copy</strong>, and always keep backups of your configuration.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">How many USB devices and disks can I attach?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>The Pi 5 has 2× USB 3.0 and 2× USB 2.0 (plus PCIe for NVMe). A powered USB hub lets you add many devices. The real limits are power (total USB current is bounded by the supply) and bandwidth (USB 3.0 ≈ 5 Gbps shared). For a media library, that is plenty — for a busy database server, it is not.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NETWORK ============ -->
+<section class="section" id="network">
+  <div class="container" style="max-width:920px">
+    <h2>Remote access &amp; networking</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">How do I use it with no monitor attached (headless)?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Three steps, and you never need a screen:</p>
+          <ol>
+            <li>In Raspberry Pi Imager, open settings (gear icon) and set hostname, username, password, Wi-Fi and "Enable SSH".</li>
+            <li>Write the card, insert it, power on the Pi, wait 2 minutes.</li>
+            <li>From your PC: <code>ssh you@hostname.local</code> (or the IP address). If you must enable SSH manually, create an empty file named <code>ssh</code> in the boot partition.</li>
+          </ol>
+          <p>To see the graphical desktop remotely instead, use VNC or Raspberry Pi Connect, or install <code>xrdp</code>.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can I reach it from outside my home?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Yes, and you should do it in the safe order: <strong>Tailscale or WireGuard</strong> (private tunnel — nothing is exposed to the internet) → <strong>Cloudflare Tunnel</strong> (publish a web app without opening ports) → port forwarding (works, but exposes your home network; only do it for a specific service, with HTTPS and strong passwords).</p>
+          <p>Never expose SSH directly on port 22 to the internet without keys, fail2ban and a strong password policy.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Could I host a real public website on it?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Technically yes. Practically, your home internet upload speed, dynamic IP, power cuts and lack of DDoS protection are real limits. Many people host a personal blog or a small internal tool this way with great success (behind Cloudflare), and host anything with paying customers on a proper VPS. Use the Pi for staging and internal services — that is where it is unbeatable value.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it replace my Wi-Fi router?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>A Pi running OpenWrt can act as a router, DNS server, VPN gateway, firewall or traffic monitor. It is a great <em>addition</em> to your router (Pi-hole, VPN, monitoring) and a legitimate option as a secondary router in a lab. As your only router, you need USB Ethernet adapters and you accept a single point of failure for the whole house.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POWER ============ -->
+<section class="section section--alt" id="power">
+  <div class="container" style="max-width:920px">
+    <h2>Power &amp; reliability</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">How much electricity does it really use?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Pi Zero 2 W: 0.4–1.5 W. Pi 4: 2.5–7 W. Pi 5: 2.5–3.5 W idle, up to ~12 W under sustained load with peripherals. Running a Pi 5 24/7 at 5 W average costs roughly 3.6 kWh per month — around <span data-usd="1">$1</span> in most countries. A desktop tower doing the same job would use 10–30× more. Test your own numbers with the <a href="pricing.html#power">power calculator</a>.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it run 24/7 for years?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Yes — this is one of the most common uses. Offices, factories and hobbyists run Pi-based systems for years. Do these four things: use the official power supply, keep it cool (below ~70 °C; heatsink or fan), boot from NVMe/USB SSD rather than microSD, and keep it away from dust and moisture. Then plan a periodic reboot schedule for kernel updates, not because it needs rest.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">What happens if the power goes out?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Modern Pi OS uses a journaled filesystem, so it usually recovers. But a power cut mid-write on a microSD card is the classic way to lose a system. Protect it with a small UPS (<span data-usd="40">$40</span>–<span data-usd="80">$80</span>) that can run a Pi for hours, enable a clean shutdown triggered by the UPS, and keep an image backup so restoring takes 10 minutes instead of a weekend.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Does the Pi 5 need a fan?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>For desktop use and especially for servers, yes — the official Active Cooler is <span data-usd="5">$5</span> and drops sustained temperatures dramatically, keeping the CPU from throttling. A Pi 4 in a ventilated case with heatsinks is usually fine without a fan; a Pi Zero 2 W needs nothing at all.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Is it secure enough for my home network?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>As secure as you configure it — exactly like any Linux server. Minimum: change the default password, use SSH keys instead of passwords, enable automatic security updates (<code>unattended-upgrades</code>), and never expose services directly to the internet. Add fail2ban for SSH. Raspberry Pi OS ships with sensible defaults and no telemetry.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARN ============ -->
+<section class="section" id="learn">
+  <div class="container" style="max-width:920px">
+    <h2>Learning, kids and jobs</h2>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">Is it good for children?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>It is arguably the best educational computer ever made. Scratch and Python are pre-installed, the Pi 500 is a kid-proof all-in-one, and the Foundation publishes free, classroom-tested project guides for every age. The key is to give them a <em>goal</em> — a Minecraft server for friends, a plant monitor, a robot — not just the board.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">What is a good first project?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Pick something you will use daily, because that is what keeps you going when it breaks:</p>
+          <ul>
+            <li><strong>Pi-hole</strong> — 45 minutes, everyone in the house benefits</li>
+            <li><strong>Media centre</strong> — 30 minutes, immediate payoff every evening</li>
+            <li><strong>Home Assistant</strong> — one evening, genuinely changes how your house works</li>
+            <li><strong>Blinking LED with a Pico</strong> — 5 minutes, teaches the electronics workflow</li>
+          </ul>
+          <p>See <a href="projects.html">20 projects with part lists</a>.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can a Raspberry Pi actually help me get a job?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>It can, if you treat it as a lab rather than a toy. The employable paths it feeds directly are Linux/DevOps administration (Docker, nginx, systemd, networking), IoT and embedded development (GPIO, I²C, SPI, MicroPython), edge AI (model deployment, computer vision) and industrial automation. What matters in interviews is that you can describe something you built, broke, fixed and measured — a Pi gives you that story for <span data-usd="55">$55</span>.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can I try all of this without buying anything?</button>
+        <div class="acc-a"><div class="acc-a-inner"><p>Yes — that is exactly what the <a href="vm.html">virtual machine guide</a> is for. You can install Raspberry Pi OS on your existing PC for free, learn the desktop, the terminal, SSH, servers and Docker, and only buy a board when you need GPIO, cameras or a permanent always-on machine.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section class="section section--alt" id="glossary">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Speak the language</span>
+      <h2>Plain-English glossary</h2>
+      <p class="lead">Every term you will meet in your first month, explained in one line each.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Term</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td><strong>SoC</strong></td><td>"System on a chip" — the single chip containing the CPU and GPU. On the Pi 5 it is the BCM2712.</td></tr>
+          <tr><td><strong>GPIO</strong></td><td>General-purpose input/output — the 40 pins that let the Pi sense and control the physical world.</td></tr>
+          <tr><td><strong>HAT</strong></td><td>"Hardware attached on top" — an add-on board that sits on the GPIO header (Sense HAT, AI HAT+).</td></tr>
+          <tr><td><strong>Headless</strong></td><td>Running the Pi with no monitor or keyboard, controlled entirely over SSH or a web interface.</td></tr>
+          <tr><td><strong>Imager</strong></td><td>The official free tool that writes the operating system to a microSD card and pre-configures Wi-Fi, SSH and users.</td></tr>
+          <tr><td><strong>microSD</strong></td><td>The card that acts as the Pi's hard disk. Class 10 / A1 or A2, real brand, always.</td></tr>
+          <tr><td><strong>NVMe / M.2</strong></td><td>Fast SSD storage attached through the Pi 5's PCIe connector — the biggest performance upgrade available.</td></tr>
+          <tr><td><strong>PCIe</strong></td><td>The high-speed expansion bus the Pi 5 exposes for NVMe and other add-ons.</td></tr>
+          <tr><td><strong>SSH</strong></td><td>The protocol for controlling the Pi from another computer's terminal: <code>ssh user@host</code>.</td></tr>
+          <tr><td><strong>Distro</strong></td><td>A Linux "distribution" — an OS built from the Linux kernel plus software (Debian, Ubuntu, Raspberry Pi OS).</td></tr>
+          <tr><td><strong>Kernel</strong></td><td>The core of the operating system that talks to the hardware.</td></tr>
+          <tr><td><strong>Docker / container</strong></td><td>A way to package an app with all its dependencies so it runs identically anywhere. The standard way to self-host.</td></tr>
+          <tr><td><strong>Headless service / daemon</strong></td><td>A program that runs in the background, usually started at boot by <code>systemd</code>.</td></tr>
+          <tr><td><strong>Cron</strong></td><td>The scheduler that runs your script at fixed times ("every night at 3 a.m.").</td></tr>
+          <tr><td><strong>I²C / SPI / UART</strong></td><td>Three standard ways chips talk to each other over short wires. Every sensor you buy uses one of them.</td></tr>
+          <tr><td><strong>MicroPython</strong></td><td>A tiny version of Python that runs directly on the Pico, with no operating system in between.</td></tr>
+          <tr><td><strong>Firmware / bootloader</strong></td><td>The very first code the board runs before your OS starts.</td></tr>
+          <tr><td><strong>PoE</strong></td><td>Power over Ethernet — power and network through a single cable, using a PoE HAT.</td></tr>
+          <tr><td><strong>TOPS</strong></td><td>Trillions of operations per second — how neural accelerators like the AI HAT+ are measured (13 or 26 TOPS).</td></tr>
+          <tr><td><strong>Throttling</strong></td><td>When the CPU slows itself down because it is too hot or underpowered. Check with <code>vcgencmd get_throttled</code>.</td></tr>
+          <tr><td><strong>Undervoltage</strong></td><td>Not enough power from a cheap charger — the most common cause of mysterious crashes and SD-card corruption.</td></tr>
+          <tr><td><strong>Compute Module</strong></td><td>A Pi without the usual ports, made for companies that build products around it.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout info reveal" style="margin-top:26px">
+      <div>📚</div>
+      <div><p><strong>Where to go next:</strong> compare <a href="models.html">models and specifications</a>, read the <a href="uses.html">twelve practical uses</a>, browse <a href="projects.html">twenty projects with part lists</a>, or start today for free with the <a href="vm.html">virtual machine guide</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+          <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+        </div>
+        <p class="footer-note">
+          An independent, ad-free and tracker-free educational guide to single-board computing.
+          Prices are indicative US list prices converted live into your currency so readers
+          everywhere can plan a budget.
+        </p>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="models.html">Models &amp; specifications</a></li>
+          <li><a href="uses.html">12 ways a Pi helps</a></li>
+          <li><a href="projects.html">20 projects with part lists</a></li>
+          <li><a href="vm.html">Virtual machine lab</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Buying</h4>
+        <ul>
+          <li><a href="pricing.html">Full price list</a></li>
+          <li><a href="pricing.html#kits">Kits &amp; bundles</a></li>
+          <li><a href="pricing.html#calculator">Build calculator</a></li>
+          <li><a href="pricing.html#cloud">Pi vs cloud hosting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Official resources</h4>
+        <ul>
+          <li><a href="https://www.raspberrypi.com/documentation/">Documentation</a></li>
+          <li><a href="https://forums.raspberrypi.com/">Community forum</a></li>
+          <li><a href="https://projects.raspberrypi.org/">Project tutorials</a></li>
+          <li><a href="https://www.raspberrypi.com/resellers/">Approved resellers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-credit">
+      <div class="made-by">
+        <span class="avatar" aria-hidden="true">MA</span>
+        <span>Website designed, written and developed by <b>Mohammed Al-Quwaizani</b></span>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="about.html">About the author &#8594;</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Raspberry Pi Guide &middot; Free to reuse for teaching with attribution.</span>
+      <span>Prices reviewed October 2026 &middot; verify with your local reseller before buying.</span>
+    </div>
+    <p class="footer-legal">
+      Raspberry Pi is a trademark of Raspberry Pi Ltd. This site is an independent educational
+      project and is not affiliated with, sponsored by or endorsed by Raspberry Pi Ltd. Product
+      names are used for identification only. Nothing on this site is an offer or a quotation.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

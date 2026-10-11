@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!-- Site designed and built by Mohammed Al-Quwaizani -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raspberry Pi Guide — What It Is, How It Helps, What It Costs, How to Try It</title>
+<meta name="description" content="A complete practical guide to Raspberry Pi: models and prices in many currencies, real-world uses, project ideas, and step-by-step instructions to try Raspberry Pi OS in a virtual machine.">
+<meta name="author" content="Mohammed Al-Quwaizani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071023">
+<meta name="application-name" content="Raspberry Pi Guide">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Raspberry Pi Guide">
+<meta property="og:title" content="Raspberry Pi Guide — What It Is, How It Helps, What It Costs, How to Try It">
+<meta property="og:description" content="A complete practical guide to Raspberry Pi: models and prices in many currencies, real-world uses, project ideas, and step-by-step instructions to try Raspberry Pi OS in a virtual machine.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Raspberry Pi Guide — What It Is, How It Helps, What It Costs, How to Try It">
+<meta name="twitter:description" content="A complete practical guide to Raspberry Pi: models and prices in many currencies, real-world uses, project ideas, and step-by-step instructions to try Raspberry Pi OS in a virtual machine.">
+<meta name="twitter:creator" content="Mohammed Al-Quwaizani">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="apple-touch-icon" href="img/favicon.svg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Raspberry Pi Guide \u2014 What It Is, How It Helps, What It Costs, How to Try It", "description": "A complete practical guide to Raspberry Pi: models and prices in many currencies, real-world uses, project ideas, and step-by-step instructions to try Raspberry Pi OS in a virtual machine.", "inLanguage": "en", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "creator": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "Raspberry Pi Guide", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}}}</script>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span class="hide-sm">Independent guide &middot; Reviewed October 2026</span>
+    </div>
+    <div class="topbar-links">
+      <span class="who">Built by <b>Mohammed Al-Quwaizani</b></span>
+      <a class="hide-sm" href="about.html">About</a>
+      <a class="hide-sm" href="pricing.html#calculator">Calculator</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Raspberry Pi Guide — home">
+      <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+      <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+    </a>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="models.html">Models</a>
+      <a href="uses.html">Uses</a>
+      <a href="projects.html">Projects</a>
+      <a href="vm.html">VM Lab</a>
+      <a href="pricing.html">Prices</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-tools">
+      <select class="mini" data-currency-select aria-label="Choose currency"></select>
+      <button class="mini" id="themeToggle" data-theme-toggle type="button" aria-label="Toggle theme">&#9728;&#65039;</button>
+      <button class="nav-toggle" data-nav-toggle type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" data-open="false"></div>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Single-board computer · From <span data-usd="5">$5</span></span>
+      <h1>A credit-card sized computer that <span>does almost anything</span>.</h1>
+      <p class="lead">
+        The Raspberry Pi is a full computer on a single board. It runs a real operating
+        system, has USB, HDMI, Wi-Fi, Bluetooth and Ethernet ports, and it starts at the
+        price of a fast-food meal. It is used in classrooms, factories, hospitals,
+        factories, home labs and by millions of hobbyists to build things that would
+        otherwise cost hundreds of dollars.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="models.html">See every model &amp; price →</a>
+        <a class="btn btn-ghost" href="vm.html">Try it in a virtual machine</a>
+      </div>
+      <div class="chips" style="margin-top:22px">
+        <span class="chip">Runs Linux &amp; Android things</span>
+        <span class="chip">GPIO pins for electronics</span>
+        <span class="chip">Silent, fanless, ~3&nbsp;W idle</span>
+        <span class="chip">Huge free software library</span>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <figure class="photo photo--hero hero-photo reveal" data-lightbox data-credit="SimonWaldherr" data-license="CC BY-SA 4.0" data-license-url="https://creativecommons.org/licenses/by-sa/4.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_Board.jpg"><img src="img/hero-pi5-board.jpg" alt="Raspberry Pi 5" width="1920" height="1280" fetchpriority="high" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Raspberry Pi 5</b> The board that runs your desktop, your server and your projects. 2.4 GHz quad-core, up to 16 GB RAM, dual 4K output and a PCIe port for NVMe storage.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="stats">
+      <div class="stat reveal"><b data-count="60" data-suffix="M+">0</b><span>boards sold worldwide</span></div>
+      <div class="stat reveal"><b data-count="140" data-suffix="+">0</b><span>countries using them</span></div>
+      <div class="stat reveal"><b data-count="3" data-suffix="W">0</b><span>typical idle power draw</span></div>
+      <div class="stat reveal"><b data-usd="5">$5</b><span>starting price (Pi Pico 2)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT IS IT ===================== -->
+<section class="section section--alt" id="what">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The basics</span>
+      <h2>What exactly is a Raspberry Pi?</h2>
+      <p class="lead">
+        A Raspberry Pi is a <strong>complete computer</strong> built onto one small circuit
+        board about the size of a credit card. You plug in power, a microSD card with the
+        operating system, a monitor and a keyboard — and you have a desktop PC.
+        But because the board also exposes bare-metal <strong>GPIO pins</strong> and
+        <strong>camera/display connectors</strong>, it can also control motors, sensors,
+        lights, relays and machines, which a normal laptop cannot do.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card card--feature reveal">
+        <h3><span class="icon">🧩</span> Hardware</h3>
+        <p>An ARM processor (the same family used in phones), RAM soldered onto the board, Wi-Fi and Bluetooth, USB ports, HDMI output, Ethernet on bigger models, plus 40 GPIO pins and camera/display ribbons.</p>
+        <ul>
+          <li>No moving parts — silent and reliable</li>
+          <li>Powered by a phone charger (5V USB-C)</li>
+          <li>Runs 24/7 without complaint</li>
+        </ul>
+      </article>
+      <article class="card card--feature reveal">
+        <h3><span class="icon icon--green">🐧</span> Software</h3>
+        <p>It runs <strong>Raspberry Pi OS</strong>, a polished version of Linux Debian with a desktop, browser, office tools, Python and a coding environment pre-installed. Windows 11 ARM, Ubuntu, Android, LibreELEC and Home Assistant also run on it.</p>
+        <ul>
+          <li>100% free and open source</li>
+          <li>Thousands of ready packages</li>
+          <li>Python, Node.js, C/C++, Docker, Kubernetes</li>
+        </ul>
+      </article>
+      <article class="card card--feature reveal">
+        <h3><span class="icon icon--blue">🌍</span> Community</h3>
+        <p>The reason a $50 board feels like a $500 one. There are books, YouTube tutorials, forums, magazines (MagPi) and ready-made images for almost every project you can imagine.</p>
+        <ul>
+          <li>Every error message is already answered online</li>
+          <li>Free official documentation and courses</li>
+          <li>"Raspberry Pi" + your idea = a tutorial exists</li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 style="margin-top:46px" class="reveal">A short history — why it matters</h3>
+    <ul class="timeline reveal">
+      <li><b>2006–2011</b> — A team at Cambridge notices that students no longer learn programming the way they did with the BBC Micro in the 1980s. They design a cheap board to fix that.</li>
+      <li><b>2012</b> — Raspberry Pi Model B launches for $35. It sells out in minutes. The goal was 10,000 units; millions were sold.</li>
+      <li><b>2015</b> — Pi 2 and the tiny <b>Pi Zero</b> ($5) arrive; the <b>Compute Module</b> takes Pi into industrial products.</li>
+      <li><b>2019–2021</b> — Pi 4 with up to 8 GB RAM and dual 4K HDMI. The <b>RP2040</b> microcontroller (Pico) launches in 2021.</li>
+      <li><b>2023</b> — Pi 5 with a 2.4 GHz quad-core CPU, PCIe, and about 2–3× the performance of Pi 4.</li>
+      <li><b>2024–2025</b> — 16 GB Pi 5, Pi 500 keyboard computer, Pico 2, AI Camera, AI HAT+, and the official 15.6" Raspberry Pi Monitor.</li>
+    </ul>
+    <p class="muted reveal">Today the same company also builds chips (<b>RP2350</b>), cameras, displays, keyboards and even its own silicon for industrial customers — while keeping the classic "learn to code cheaply" mission at the centre.</p>
+  </div>
+</section>
+
+<!-- ===================== MODELS LINK ===================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap">
+      <div style="min-width:260px">
+        <h3 style="margin-bottom:.25em">Which board should you buy?</h3>
+        <p class="muted" style="margin:0">Every model compared side by side &mdash; specifications, photos and prices in your currency.</p>
+      </div>
+      <a class="btn btn-primary" href="models.html">Compare every model &#8594;</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section section--tight" id="photos-hardware">
+  <div class="container">
+  <div class="section-head reveal">
+    <span class="eyebrow">Photography</span>
+    <h2>The hardware, up close</h2>
+    <p class="lead">Real boards, real ports, real GPIO pins. Click any photograph to open it full size with the credit of the person who released it.</p>
+  </div>
+  <div class="gallery gallery-3">
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="SimonWaldherr" data-license="CC BY-SA 4.0" data-license-url="https://creativecommons.org/licenses/by-sa/4.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_1%2C_Pi_5%2C_Pi_400%2C_Zero_2_and_Pico.jpg"><img src="img/lineup.jpg" alt="Five generations" width="1920" height="1277" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Five generations</b> The original Pi 1 next to a Pi 5, a Pi 400, a Zero 2 and a Pico.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="SimonWaldherr" data-license="CC BY 4.0" data-license-url="https://creativecommons.org/licenses/by/4.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_with_active_cooler.jpg"><img src="img/pi5-active-cooler.jpg" alt="Active Cooler" width="1280" height="960" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Active Cooler</b> A $5 part that stops the Pi 5 slowing itself down under load.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="Maskaravivek" data-license="CC BY-SA 4.0" data-license-url="https://creativecommons.org/licenses/by-sa/4.0" data-source="https://commons.wikimedia.org/wiki/File%3AGPIO_board_with_Raspberry_Pi.jpg"><img src="img/gpio-breadboard.jpg" alt="GPIO on a breadboard" width="1280" height="1707" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>GPIO on a breadboard</b> Forty pins that let the computer control motors, sensors, relays and lights.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="Les Pounder from Blackpool, UK" data-license="CC BY-SA 2.0" data-license-url="https://creativecommons.org/licenses/by-sa/2.0" data-source="https://commons.wikimedia.org/wiki/File%3AOfficial_Raspberry_Pi_Case_%2818740375138%29.jpg"><img src="img/case-official.jpg" alt="The official case" width="1280" height="853" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>The official case</b> Two minutes to fit, and the board becomes something you can leave on a shelf.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="SimonWaldherr" data-license="CC BY 4.0" data-license-url="https://creativecommons.org/licenses/by/4.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_%28vertical%29.jpg"><img src="img/pi5-vertical.jpg" alt="Small footprint" width="1280" height="1600" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>Small footprint</b> On its edge, a Raspberry Pi 5 takes less room than a paperback book.</figcaption></figure>
+    <figure class="photo photo--wide reveal" data-lightbox data-credit="Masahiko OHKUBO from Kobe, Japan" data-license="CC BY 2.0" data-license-url="https://creativecommons.org/licenses/by/2.0" data-source="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_400_desktop_%2850596514408%29.jpg"><img src="img/pi400-desktop.jpg" alt="A real desktop" width="1280" height="960" loading="lazy" decoding="async"><span class="zoom-hint" aria-hidden="true"></span><figcaption><b>A real desktop</b> A Raspberry Pi 400 driving a normal monitor, keyboard and mouse.</figcaption></figure>
+  </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT HELPS ===================== -->
+<section class="section section--alt" id="helps">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why bother?</span>
+      <h2>How a Raspberry Pi actually helps you</h2>
+      <p class="lead">Six honest answers — no hype. Each one has a real, working, well-documented path.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <h3><span class="icon icon--green">🎓</span> Learn computing for real</h3>
+        <p>Instead of clicking through a simulator, you own the machine. You install the OS, break it, reinstall it, use SSH, set up a web server, learn Linux permissions. Skills that transfer directly to cloud and DevOps jobs.</p>
+      </article>
+      <article class="card reveal">
+        <h3><span class="icon icon--blue">🏠</span> Automate your home</h3>
+        <p>Run <strong>Home Assistant</strong> and connect lights, plugs, sensors, cameras and air conditioners from every brand in one app. Local control: it works with no internet and keeps your data inside the house.</p>
+      </article>
+      <article class="card reveal">
+        <h3><span class="icon">🖥️</span> Replace a paid cloud server</h3>
+        <p>A Pi 5 with an SSD hosts websites, databases, Nextcloud files, a Git server, game servers (Minecraft — up to ~10 players) and Docker containers for around <span data-usd="1">$1</span>–<span data-usd="3">$3</span> of electricity per month instead of a monthly VPS bill.</p>
+      </article>
+      <article class="card reveal">
+        <h3><span class="icon icon--amber">📺</span> Any TV becomes smart</h3>
+        <p>Install <strong>LibreELEC / Kodi</strong> and you get a media centre that plays every format, from a USB drive or network share, with no ads, no tracking and no "this app is not available in your region".</p>
+      </article>
+      <article class="card reveal">
+        <h3><span class="icon icon--violet">🤖</span> Build electronics &amp; robots</h3>
+        <p>With the Pico or the Pi's GPIO you drive motors, LEDs, relays, pumps, soil sensors and cameras. This is how students build graduation projects and how small workshops build cheap monitoring devices.</p>
+      </article>
+      <article class="card reveal">
+        <h3><span class="icon icon--green">🔒</span> Block ads and trackers everywhere</h3>
+        <p><strong>Pi-hole</strong> on a Zero 2 W protects every device in your network — phones, tablets, smart TVs — with no app to install. Set it once, forget it, and the whole household browses cleaner.</p>
+      </article>
+    </div>
+
+    <p class="center" style="margin-top:28px">
+      <a class="btn btn-ghost" href="uses.html">Read the deep-dive: 12 uses with setup steps →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== VM TEASER ===================== -->
+<section class="section" id="vm-teaser">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Try before you buy</span>
+      <h2>No board yet? Run Raspberry Pi on your PC today</h2>
+      <p class="lead">
+        You do not have to spend anything to start. A <strong>virtual machine</strong> (VM)
+        is a computer inside your computer. Two ways to do it:
+      </p>
+    </div>
+
+    <div class="grid grid-2">
+      <article class="card reveal">
+        <h3>1 · Raspberry Pi Desktop for PC (easiest)</h3>
+        <p>An official x86 version of the Raspberry Pi OS desktop that boots inside VirtualBox or VMware on any laptop. You get the real menu, the real file manager, Thonny Python, Chromium — everything except the GPIO pins.</p>
+        <ol>
+          <li>Download the "Raspberry Pi Desktop" ISO from raspberrypi.com/software</li>
+          <li>Create a new VM: 2048 MB RAM, 20 GB disk, Debian 64-bit</li>
+          <li>Attach the ISO, press Start, wait ~2 minutes</li>
+        </ol>
+        <p class="muted">Best for: learning the desktop, testing tutorials, showing students.</p>
+      </article>
+      <article class="card reveal">
+        <h3>2 · QEMU emulation (most authentic)</h3>
+        <p>QEMU pretends to be actual Pi hardware. You boot the real ARM image, so you can practise SSH, cross-compiling and the ARM ecosystem — slower, but much closer to the real thing.</p>
+        <div class="code-block"><pre><span class="cmt"># Emulate a Raspberry Pi 3 in software</span>
+<span class="cmd">qemu-system-aarch64</span> -M raspi3b -cpu cortex-a53 -m 1024 \
+  -kernel kernel8.img -dtb bcm2710-rpi-3-b-plus.dtb \
+  -sd raspios.img -serial stdio \
+  -append "console=ttyAMA0 root=/dev/mmcblk0p2 rw rootwait" \
+  -usb -device usb-kbd -device usb-mouse -device usb-net,netdev=n0 \
+  -netdev user,id=n0,hostfwd=tcp::2222-:22</pre></div>
+        <p class="muted">Best for: practising server/admin skills, CI testing, ARM development.</p>
+      </article>
+    </div>
+
+    <div class="callout good reveal">
+      <div>💡</div>
+      <div>
+        <p><strong>Honest expectation setting:</strong> a VM teaches you the operating system and the workflow, but it cannot drive LEDs, motors, cameras or a HAT. When you are ready for those, the real board is <span data-usd="15">$15</span> away.</p>
+      </div>
+    </div>
+
+    <p class="center" style="margin-top:10px">
+      <a class="btn btn-primary" href="vm.html">Full VM guide: 5 step-by-step methods →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== KITS / PRICING TEASER ===================== -->
+<section class="section section--alt" id="pricing-teaser">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Budget</span>
+      <h2>What you really pay — three realistic starting points</h2>
+      <p class="lead">The board alone is not enough: you need a power supply, a microSD card and (usually) a case. Here is what a complete, working setup costs.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <span class="badge">Starter</span>
+        <h3 style="margin-top:12px">Learn &amp; tinker</h3>
+        <div class="price"><span data-usd="46"></span><small>total setup</small></div>
+        <ul>
+          <li>Pi Zero 2 W — <span data-usd="15">$15</span></li>
+          <li>Official 5V/2.5A PSU — <span data-usd="8">$8</span></li>
+          <li>32 GB microSD — <span data-usd="10">$10</span></li>
+          <li>Mini HDMI adapter — <span data-usd="7">$7</span></li>
+          <li>Zero case — <span data-usd="6">$6</span></li>
+          <li>Use your existing TV + keyboard</li>
+        </ul>
+      </article>
+      <article class="card reveal" style="box-shadow:var(--glow);border-color:rgba(31,111,235,.5)">
+        <span class="badge badge--hot">Recommended</span>
+        <h3 style="margin-top:12px">Real desktop + home server</h3>
+        <div class="price"><span data-usd="145"></span><small>total setup</small></div>
+        <ul>
+          <li>Raspberry Pi 5 · 8 GB — <span data-usd="80">$80</span></li>
+          <li>Official 27W USB-C PSU — <span data-usd="12">$12</span></li>
+          <li>Active Cooler — <span data-usd="5">$5</span></li>
+          <li>64 GB microSD — <span data-usd="14">$14</span></li>
+          <li>Official case — <span data-usd="10">$10</span></li>
+          <li>micro HDMI cable — <span data-usd="9">$9</span></li>
+          <li>Keyboard + mouse — <span data-usd="15">$15</span></li>
+        </ul>
+        <div class="buy"><a class="btn btn-primary btn-sm" href="pricing.html">Build this kit →</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="badge">Pro / server</span>
+        <h3 style="margin-top:12px">Serious home lab</h3>
+        <div class="price"><span data-usd="300"></span><small>total setup</small></div>
+        <ul>
+          <li>Pi 5 · 16 GB — <span data-usd="120">$120</span></li>
+          <li>M.2 HAT+ + 500 GB NVMe — <span data-usd="85">$85</span></li>
+          <li>Official 27W PSU + cooler — <span data-usd="17">$17</span></li>
+          <li>Aluminium case with fan — <span data-usd="24">$24</span></li>
+          <li>Small UPS / surge protection — <span data-usd="40">$40</span></li>
+          <li>Extra 64 GB SD for backups — <span data-usd="14">$14</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="center" style="margin-top:28px">
+      <a class="btn btn-ghost" href="pricing.html">All prices, kits, accessories &amp; a build calculator →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="container" style="max-width:900px">
+    <div class="section-head reveal">
+      <span class="eyebrow">Quick answers</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-q" type="button">Is a Raspberry Pi a normal computer?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Yes and no. It is a full computer running a real operating system — you can browse the web, write documents, code, watch video and print. But it is slower than a modern laptop and it is designed to be <em>tinkered with</em>: exposed pins, swappable storage, no sealed case.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can it replace my laptop?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>For web, email, documents, coding and media — a Pi 5 with 8 GB or 16 GB handles it comfortably. For heavy video editing, AAA gaming, professional CAD or Windows-only software, keep the laptop. Many people use both: laptop for work, Pi as an always-on server.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Do I need a monitor, keyboard and mouse?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Only for the first setup. Once Wi-Fi and SSH are configured you can run the Pi completely "headless" from your normal PC using a terminal — no screen attached at all. Most servers never have a monitor.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Can I really test it without buying anything?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Yes. Raspberry Pi Desktop runs in VirtualBox on Windows, macOS, Linux and even on another Raspberry Pi. QEMU can emulate a full ARM Pi. See <a href="vm.html">the virtual machine guide</a> for exact settings and commands.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Does it come with Windows?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>No. It ships with no storage at all; you install Raspberry Pi OS (free Linux) yourself in about 15 minutes. You can also install Windows 11 on ARM, but it is fiddly and not officially supported, so it is not recommended for beginners.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">How much electricity does it use?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>A Pi 5 idles around 2.5–3.5 W and peaks near 12 W under heavy load. Running 24/7 for a month at 5 W average is roughly 3.6 kWh — often under <span data-usd="1">$1</span> of electricity in most countries. Compare that with a desktop PC that pulls 100–300 W.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Which microSD card should I buy?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>Use a genuine Class 10 / A1 or A2 card from a known brand (SanDisk Extreme, Samsung EVO, Kingston Canvas). Fake and slow cards are the number-one cause of "my Pi is slow" and corruption complaints. 32 GB is enough; 64 GB gives comfort for projects and Docker images.</p>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" type="button">Is the Pi good enough for AI work?</button>
+        <div class="acc-a"><div class="acc-a-inner">
+          <p>For learning and small models, yes — it runs TensorFlow Lite, OpenCV, Ollama with small language models, and Whisper for speech. For bigger work you add the AI HAT+ (13 or 26 TOPS neural accelerator) and suddenly you have computer vision and local LLM chat running on a board that uses 10 watts.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section section--alt">
+  <div class="container center reveal">
+    <h2>Start with one board. You will end up with five.</h2>
+    <p class="lead" style="margin-inline:auto">Pick a model, check the real price in your currency, then follow the step-by-step guides. Everything on this site is beginner-friendly and tested.</p>
+    <div class="hero-actions" style="justify-content:center">
+      <a class="btn btn-primary" href="models.html">Compare models</a>
+      <a class="btn btn-ghost" href="vm.html">Try in a VM</a>
+      <a class="btn btn-ghost" href="projects.html">Browse projects</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== AUTHOR CREDIT ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="author-card reveal">
+      <div class="monogram" aria-hidden="true">MA</div>
+      <div>
+        <span class="eyebrow">About the author</span>
+        <h3 style="margin-bottom:.3em">Mohammed Al-Quwaizani</h3>
+        <div class="role">Designed, wrote and developed this website</div>
+        <p>
+          Every page of this guide — the model comparisons, the price tables, the calculators, the
+          virtual machine lab and the interface itself — was built by Mohammed as a practical,
+          no-hype resource for anyone starting with a single-board computer. No templates, no
+          content farms, no sponsored links.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-ghost btn-sm" href="about.html">How this guide is made &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+          <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+        </div>
+        <p class="footer-note">
+          An independent, ad-free and tracker-free educational guide to single-board computing.
+          Prices are indicative US list prices converted live into your currency so readers
+          everywhere can plan a budget.
+        </p>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="models.html">Models &amp; specifications</a></li>
+          <li><a href="uses.html">12 ways a Pi helps</a></li>
+          <li><a href="projects.html">20 projects with part lists</a></li>
+          <li><a href="vm.html">Virtual machine lab</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Buying</h4>
+        <ul>
+          <li><a href="pricing.html">Full price list</a></li>
+          <li><a href="pricing.html#kits">Kits &amp; bundles</a></li>
+          <li><a href="pricing.html#calculator">Build calculator</a></li>
+          <li><a href="pricing.html#cloud">Pi vs cloud hosting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Official resources</h4>
+        <ul>
+          <li><a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager &amp; OS</a></li>
+          <li><a href="https://www.raspberrypi.com/documentation/">Official documentation</a></li>
+          <li><a href="https://forums.raspberrypi.com/">Community forum</a></li>
+          <li><a href="https://magpi.raspberrypi.com/">The MagPi magazine</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-credit">
+      <div class="made-by">
+        <span class="avatar" aria-hidden="true">MA</span>
+        <span>Website designed, written and developed by <b>Mohammed Al-Quwaizani</b></span>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="about.html">About the author &#8594;</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Raspberry Pi Guide &middot; Free to reuse for teaching with attribution.</span>
+      <span>Prices reviewed October 2026 &middot; verify with your local reseller before buying.</span>
+    </div>
+    <p class="footer-legal">
+      Raspberry Pi is a trademark of Raspberry Pi Ltd. This site is an independent educational
+      project and is not affiliated with, sponsored by or endorsed by Raspberry Pi Ltd. Product
+      names are used for identification only. Nothing on this site is an offer or a quotation.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

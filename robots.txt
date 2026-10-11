@@ -1,0 +1,11 @@
+# Raspberry Pi Guide — robots.txt
+# Replace REPLACE-WITH-YOUR-DOMAIN with the real domain before publishing.
+
+User-agent: *
+Allow: /
+
+# The 404 page should never be indexed.
+Disallow: /404.html
+
+# Web fonts are loaded from Google Fonts, nothing else is external.
+Sitemap: https://REPLACE-WITH-YOUR-DOMAIN/sitemap.xml

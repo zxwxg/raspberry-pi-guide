@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!-- Site designed and built by Mohammed Al-Quwaizani -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About This Project &amp; Its Author — Raspberry Pi Guide</title>
+<meta name="description" content="About the Raspberry Pi Guide: who built it, how prices and specifications are researched, our editorial standards, the changelog, the technology behind the site, and how to send corrections.">
+<meta name="author" content="Mohammed Al-Quwaizani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071023">
+<meta name="application-name" content="Raspberry Pi Guide">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Raspberry Pi Guide">
+<meta property="og:title" content="About This Project &amp; Its Author — Raspberry Pi Guide">
+<meta property="og:description" content="About the Raspberry Pi Guide: who built it, how prices and specifications are researched, our editorial standards, the changelog, the technology behind the site, and how to send corrections.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About This Project &amp; Its Author — Raspberry Pi Guide">
+<meta name="twitter:description" content="About the Raspberry Pi Guide: who built it, how prices and specifications are researched, our editorial standards, the changelog, the technology behind the site, and how to send corrections.">
+<meta name="twitter:creator" content="Mohammed Al-Quwaizani">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="apple-touch-icon" href="img/favicon.svg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AboutPage", "name": "About This Project &amp; Its Author \u2014 Raspberry Pi Guide", "description": "About the Raspberry Pi Guide: who built it, how prices and specifications are researched, our editorial standards, the changelog, the technology behind the site, and how to send corrections.", "inLanguage": "en", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "creator": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}, "isAccessibleForFree": true, "isPartOf": {"@type": "WebSite", "name": "Raspberry Pi Guide", "author": {"@type": "Person", "name": "Mohammed Al-Quwaizani", "jobTitle": "Author and web developer"}}}</script>
+</head>
+<body data-no-byline>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span class="hide-sm">Independent guide &middot; Reviewed October 2026</span>
+    </div>
+    <div class="topbar-links">
+      <span class="who">Built by <b>Mohammed Al-Quwaizani</b></span>
+      <a class="hide-sm" href="about.html">About</a>
+      <a class="hide-sm" href="pricing.html#calculator">Calculator</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Raspberry Pi Guide — home">
+      <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+      <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+    </a>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="uses.html">Uses</a>
+      <a href="projects.html">Projects</a>
+      <a href="vm.html">VM Lab</a>
+      <a href="pricing.html">Prices</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html" class="active" aria-current="page">About</a>
+    </nav>
+    <div class="nav-tools">
+      <select class="mini" data-currency-select aria-label="Choose currency"></select>
+      <button class="mini" id="themeToggle" data-theme-toggle type="button" aria-label="Toggle theme">&#9728;&#65039;</button>
+      <button class="nav-toggle" data-nav-toggle type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" data-open="false"></div>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a><span class="sep">/</span>About</div>
+    <span class="eyebrow">About this project</span>
+    <h1>An independent guide, built by one person</h1>
+    <p class="lead">
+      This site exists for one reason: most Raspberry Pi information online is either
+      marketing, outdated, or written for people who already know the answers. This guide
+      is the opposite — plain language, real prices, honest limits, and step-by-step
+      instructions that were written to be followed.
+    </p>
+  </div>
+</section>
+
+<!-- ============ AUTHOR ============ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="author-card reveal">
+      <div class="monogram" aria-hidden="true">MA</div>
+      <div>
+        <h3 style="margin-bottom:.3em">Mohammed Al-Quwaizani</h3>
+        <div class="role">Author · Editor · Developer of this website</div>
+        <p>
+          Mohammed designed, wrote and built every part of this guide: the structure of the seven
+          sections, the model comparisons, the price tables and calculators, the virtual-machine
+          lab, and the interface you are reading right now. Everything here is hand-written —
+          no template, no page builder, no content farm.
+        </p>
+        <p>
+          The goal is practical: a person who has never touched a single-board computer should be
+          able to read one page, decide what to buy, spend the right amount of money, and get
+          something working the same day. And a person who does not want to spend anything yet
+          should be able to start today, for free, using the virtual machine guide.
+        </p>
+        <p class="signature">Website designed &amp; developed by Mohammed Al-Quwaizani · Reviewed October 2026</p>
+      </div>
+    </div>
+
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card card--pad-sm reveal">
+        <h3 style="font-size:1rem"><span class="icon icon--green" style="width:34px;height:34px;font-size:.95rem">✍️</span> What he wrote</h3>
+        <p class="muted">All seven guides: models and specifications, twelve practical uses, twenty projects with part lists, the virtual-machine lab, the price list and calculators, the FAQ, and this page.</p>
+      </div>
+      <div class="card card--pad-sm reveal">
+        <h3 style="font-size:1rem"><span class="icon icon--blue" style="width:34px;height:34px;font-size:.95rem">⚙️</span> What he built</h3>
+        <p class="muted">The whole front end: the design system, dark and light themes, the live currency converter, the build calculator, the electricity calculator, the section navigator and the responsive layout.</p>
+      </div>
+      <div class="card card--pad-sm reveal">
+        <h3 style="font-size:1rem"><span class="icon icon--amber" style="width:34px;height:34px;font-size:.95rem">🎯</span> Why</h3>
+        <p class="muted">Because access to computing should not depend on budget. A $15 board and a free virtual machine are enough to learn skills that lead to real work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT THIS IS ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="reveal">
+        <span class="eyebrow">Scope</span>
+        <h2>What this site is</h2>
+        <ul>
+          <li>An <strong>independent educational project</strong> about single-board computing</li>
+          <li>A buying guide with <strong>transparent, sourced prices</strong> and live currency conversion</li>
+          <li>A practical manual: setup steps, terminal commands, checklists, troubleshooting</li>
+          <li>A free alternative for people who cannot buy hardware yet — the virtual-machine lab</li>
+          <li>Static, tracker-free and readable offline</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Boundaries</span>
+        <h2>What this site is not</h2>
+        <ul>
+          <li>Not affiliated with, sponsored by or endorsed by Raspberry Pi Ltd</li>
+          <li>Not a shop, not an affiliate page — <strong>there are no sponsored links</strong> and no commission</li>
+          <li>Not a press release: when something has a weakness, the weakness is written down</li>
+          <li>Not a substitute for the official documentation when you need version-specific detail</li>
+          <li>Not collecting anything about you: no ads, no analytics, no cookies, no accounts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHODOLOGY ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Methodology</span>
+      <h2>How prices, specifications and commands are handled</h2>
+      <p class="lead">Credibility comes from saying exactly where numbers come from. Here is the whole method.</p>
+    </div>
+    <div class="grid grid-2">
+      <ol class="steps reveal">
+        <li>
+          <h3>Board prices come from official list prices</h3>
+          <p>The per-model figures follow the manufacturer's published list price for each memory variant. They are the fairest comparable baseline, because reseller prices vary by country, stock and shipping.</p>
+        </li>
+        <li>
+          <h3>Kits and accessories are typical market ranges</h3>
+          <p>Third-party bundles differ too much for a single number, so they are shown as a range (<em>e.g. $110–135</em>) based on widely available bundles, not on one shop's promotion.</p>
+        </li>
+        <li>
+          <h3>Everything is stored in USD, then converted</h3>
+          <p>Prices are written once in US dollars and converted in your browser with approximate exchange rates, so the whole site can be read in a meaningful currency. Exchange rates move — treat non-USD figures as guidance, not quotes.</p>
+        </li>
+      </ol>
+      <ol class="steps reveal" style="counter-reset:s 3">
+        <li>
+          <h3>Totals are complete, never just the board</h3>
+          <p>Every "total cost" in this guide includes what is genuinely required to make the project work: power supply, storage, cooling, cables. A price that ignores those is not a real price.</p>
+        </li>
+        <li>
+          <h3>Specifications follow the current generation</h3>
+          <p>Pi 5, Pi 4 Model B, Zero 2 W, Pico 2, Pi 400/500 and Compute Modules. Anything marked <span class="badge badge--legacy">legacy</span> is legacy hardware, kept because it is still useful second-hand.</p>
+        </li>
+        <li>
+          <h3>Commands are written to be pasted</h3>
+          <p>Shell examples are standard, widely used recipes, and where a platform behaves differently (for example, line continuation in PowerShell) the difference is called out explicitly rather than hidden.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="callout warn reveal">
+      <div>⚠️</div>
+      <div><p><strong>Always verify before buying.</strong> Prices, stock and taxes change constantly. Check the official approved reseller for your country on the day you order. Nothing on this site is an offer or a quote.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STANDARDS ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Editorial standards</span>
+      <h2>Five rules the writing follows</h2>
+    </div>
+    <div class="grid grid-3">
+      <article class="card reveal"><h3><span class="icon">1</span> No hype</h3><p>If a Raspberry Pi cannot do something — heavy gaming, professional video editing, Windows-only software, business-grade reliability — it is stated plainly instead of being glossed over.</p></article>
+      <article class="card reveal"><h3><span class="icon icon--green">2</span> Numbers over adjectives</h3><p>"2–3× faster", "3.5 W idle", "$168 complete setup" instead of "blazing fast" and "amazing value".</p></article>
+      <article class="card reveal"><h3><span class="icon icon--blue">3</span> Costs are complete</h3><p>Every budget includes the boring parts: the official power supply, the good memory card, the cooler, the cable you forgot.</p></article>
+      <article class="card reveal"><h3><span class="icon icon--amber">4</span> Beginnings are free</h3><p>Every section that requires spending money also explains how to try the same thing for nothing in a virtual machine.</p></article>
+      <article class="card reveal"><h3><span class="icon icon--violet">5</span> Corrections are welcome</h3><p>If a price, a specification or a command is wrong or has gone out of date, it gets fixed and noted in the changelog below.</p></article>
+      <article class="card reveal"><h3><span class="icon icon--green">6</span> Attribution matters</h3><p>Tools and projects referenced here — Pi-hole, Home Assistant, Nextcloud, Frigate, Kodi and others — belong to their communities and are credited as such.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHANGELOG ============ -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="reveal">
+        <span class="eyebrow">Changelog</span>
+        <h2>What changed, and when</h2>
+        <ul class="timeline">
+          <li><b>Version 1.1 — October 2026</b><br>Professional redesign: new typography and design system, top bar, reading-progress bar, floating section navigator, accessible navigation drawer, author credit, meta/SEO tags, structured data, this About page, and a 404 page.</li>
+          <li><b>Version 1.0 — October 2026</b><br>First release: home, models, uses, projects, virtual machine, prices and FAQ guides, with the currency converter, the build calculator and the electricity calculator.</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Colophon</span>
+        <h2>How the site is made</h2>
+        <div class="table-wrap">
+          <table style="min-width:auto">
+            <tbody>
+              <tr><td>Markup &amp; styling</td><td>Hand-written HTML and CSS — no framework, no build step</td></tr>
+              <tr><td>Interactivity</td><td>One small vanilla JavaScript file</td></tr>
+              <tr><td>Typography</td><td>Inter and JetBrains Mono, with a system fallback stack</td></tr>
+              <tr><td>Photography</td><td>Wikimedia Commons, CC-licensed — see the photo credits above</td></tr>
+              <tr><td>Cookies</td><td>None. Preferences are stored in your browser's local storage</td></tr>
+              <tr><td>Tracking</td><td>None. No analytics, no ads, no third-party scripts</td></tr>
+              <tr><td>Offline</td><td>Fully readable with no internet connection</td></tr>
+              <tr><td>Accessibility</td><td>Keyboard navigable, focus-visible rings, reduced-motion support, semantic headings</td></tr>
+              <tr><td>Printing</td><td>Dedicated print stylesheet for hand-outs and classroom use</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDITS ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Credits &amp; licensing</span>
+      <h2>Standing on other people's work</h2>
+      <p class="lead">The Raspberry Pi ecosystem is built by a huge community. These are the projects this guide points you to most often, and they deserve the credit for making a $15 board useful.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card card--pad-sm reveal"><h4>Pi-hole</h4><p class="muted">Network-wide ad blocking</p></div>
+      <div class="card card--pad-sm reveal"><h4>Home Assistant</h4><p class="muted">Local smart-home automation</p></div>
+      <div class="card card--pad-sm reveal"><h4>Nextcloud</h4><p class="muted">Self-hosted cloud storage</p></div>
+      <div class="card card--pad-sm reveal"><h4>Frigate</h4><p class="muted">Local AI camera NVR</p></div>
+      <div class="card card--pad-sm reveal"><h4>Kodi &amp; LibreELEC</h4><p class="muted">Media centres</p></div>
+      <div class="card card--pad-sm reveal"><h4>RetroPie &amp; Batocera</h4><p class="muted">Retro gaming</p></div>
+      <div class="card card--pad-sm reveal"><h4>QEMU</h4><p class="muted">The emulator behind the VM lab</p></div>
+      <div class="card card--pad-sm reveal"><h4>Raspberry Pi Imager</h4><p class="muted">Official imaging tool</p></div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:26px">
+      <div class="card reveal">
+        <h3>Content licence</h3>
+        <p>The text and diagrams of this guide may be reused for teaching, study groups and non-commercial documentation <strong>with attribution to Mohammed Al-Quwaizani</strong> and a link back to this site. Commercial republication needs permission.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Logos &amp; trademarks</h3>
+        <p>"Raspberry Pi" and the raspberry mark are trademarks of Raspberry Pi Ltd. The mark used in
+        the header of this site is a redrawn stand-in made for this guide, not the official artwork
+        file, and it is used purely to identify the products being discussed. All other product
+        names and brands remain the property of their respective owners. This site is not affiliated
+        with, sponsored by or endorsed by Raspberry Pi Ltd.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ PHOTO CREDITS ============ -->
+<section class="section" id="photo-credits">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Photography</span>
+      <h2>Photo credits</h2>
+      <p class="lead">
+        Every photograph on this site comes from Wikimedia Commons and is used under the licence
+        shown below. Click any photo anywhere on the site to open it full size with its credit.
+      </p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Photograph</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>hero-pi5-board.jpg</strong></td>
+            <td>SimonWaldherr</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_Board.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi5.jpg</strong></td>
+            <td>SimonWaldherr</td>
+            <td>CC BY 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi5-active-cooler.jpg</strong></td>
+            <td>SimonWaldherr</td>
+            <td>CC BY 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_with_active_cooler.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi4-top.jpg</strong></td>
+            <td>Laserlicht</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_4_Model_B_-_Top.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi4-side.jpg</strong></td>
+            <td>Laserlicht</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_4_Model_B_-_Side.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi4-network.jpg</strong></td>
+            <td>RAIL P ( RAIL.PHOTOGRAPHY )</td>
+            <td>CC0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_4_on_a_network_switch.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>zero-2w.jpg</strong></td>
+            <td>Laserlicht</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_Zero_2_W.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pico2.jpg</strong></td>
+            <td>Profpcde</td>
+            <td>CC0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ATop_view_of_a_Raspberry_Pi_Pico_2_microcontroller_board.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi400.jpg</strong></td>
+            <td>SimonWaldherr</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_400.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi400-desktop.jpg</strong></td>
+            <td>Masahiko OHKUBO from Kobe, Japan</td>
+            <td>CC BY 2.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_400_desktop_%2850596514408%29.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>lineup.jpg</strong></td>
+            <td>SimonWaldherr</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_1%2C_Pi_5%2C_Pi_400%2C_Zero_2_and_Pico.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>camera-module.jpg</strong></td>
+            <td>the Raspberry Pi Foundation</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_Camera_Module_v2_with_ribbon.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>camera-fitted.jpg</strong></td>
+            <td>Gareth Halfacree from Bradford, UK</td>
+            <td>CC BY-SA 2.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_Camera_Module_-_Fitted_%2814675164282%29.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>gpio-breadboard.jpg</strong></td>
+            <td>Maskaravivek</td>
+            <td>CC BY-SA 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3AGPIO_board_with_Raspberry_Pi.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>case-official.jpg</strong></td>
+            <td>Les Pounder from Blackpool, UK</td>
+            <td>CC BY-SA 2.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3AOfficial_Raspberry_Pi_Case_%2818740375138%29.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>pi5-vertical.jpg</strong></td>
+            <td>SimonWaldherr</td>
+            <td>CC BY 4.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_5_%28vertical%29.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+          <tr>
+            <td><strong>gpio-header.jpg</strong></td>
+            <td>Florian Knodt - https://www.flickr.com/photos/adlerweb/</td>
+            <td>CC BY 2.0</td>
+            <td><a href="https://commons.wikimedia.org/wiki/File%3ARaspberry_Pi_3_silkscreen_logo_and_GPIO_header.jpg" target="_blank" rel="noopener">Commons page</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin-top:14px">
+      Share-alike licences allow reuse with attribution; this site only resizes the images and keeps the
+      same licence terms. No photograph has been altered in content.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section">
+  <div class="container" style="max-width:900px">
+    <div class="section-head reveal">
+      <span class="eyebrow">Corrections</span>
+      <h2>Found a mistake?</h2>
+      <p class="lead">
+        Prices go stale, distributors change, and software moves. If something here is wrong —
+        a specification, a price, a command that no longer works — send it to the author with the
+        page name and the correction, and it will be fixed and credited in the changelog.
+      </p>
+    </div>
+    <div class="callout brand reveal">
+      <div>✉️</div>
+      <div>
+        <p><strong>How to reach the author:</strong> use the same channel you received this project from (the repository, the message thread or the person who shared it with you). Corrections are usually acknowledged within a few days.</p>
+      </div>
+    </div>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="index.html">Back to the guide</a>
+      <a class="btn btn-ghost" href="vm.html">Start free in a virtual machine</a>
+      <a class="btn btn-ghost" href="pricing.html#calculator">Open the build calculator</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><img src="img/raspberry-pi-mark.svg" alt="" width="34" height="34" decoding="async"></span>
+          <span class="brand-text"><b>Raspberry Pi Guide</b><small>Learn &middot; Build &middot; Buy</small></span>
+        </div>
+        <p class="footer-note">
+          An independent, ad-free and tracker-free educational guide to single-board computing.
+          Prices are indicative US list prices converted live into your currency so readers
+          everywhere can plan a budget.
+        </p>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="models.html">Models &amp; specifications</a></li>
+          <li><a href="uses.html">12 ways a Pi helps</a></li>
+          <li><a href="projects.html">20 projects with part lists</a></li>
+          <li><a href="vm.html">Virtual machine lab</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Buying</h4>
+        <ul>
+          <li><a href="pricing.html">Full price list</a></li>
+          <li><a href="pricing.html#kits">Kits &amp; bundles</a></li>
+          <li><a href="pricing.html#calculator">Build calculator</a></li>
+          <li><a href="pricing.html#cloud">Pi vs cloud hosting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Start here</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="models.html">Models &amp; prices</a></li>
+          <li><a href="vm.html">Virtual machine lab</a></li>
+          <li><a href="pricing.html#calculator">Build calculator</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-credit">
+      <div class="made-by">
+        <span class="avatar" aria-hidden="true">MA</span>
+        <span>Website designed, written and developed by <b>Mohammed Al-Quwaizani</b></span>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="about.html">About the author &#8594;</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Raspberry Pi Guide &middot; Free to reuse for teaching with attribution.</span>
+      <span>Prices reviewed October 2026 &middot; verify with your local reseller before buying.</span>
+    </div>
+    <p class="footer-legal">
+      Raspberry Pi is a trademark of Raspberry Pi Ltd. This site is an independent educational
+      project and is not affiliated with, sponsored by or endorsed by Raspberry Pi Ltd. Product
+      names are used for identification only. Nothing on this site is an offer or a quotation.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
