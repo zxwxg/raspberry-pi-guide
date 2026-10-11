@@ -1,5 +1,5 @@
 # Raspberry Pi Guide — robots.txt
-# Replace REPLACE-WITH-YOUR-DOMAIN with the real domain before publishing.
+# Live at https://zxwxg.github.io/raspberry-pi-guide/
 
 User-agent: *
 Allow: /
@@ -8,4 +8,4 @@ Allow: /
 Disallow: /404.html
 
 # Web fonts are loaded from Google Fonts, nothing else is external.
-Sitemap: https://REPLACE-WITH-YOUR-DOMAIN/sitemap.xml
+Sitemap: https://zxwxg.github.io/raspberry-pi-guide/sitemap.xml

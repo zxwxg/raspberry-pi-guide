@@ -2,6 +2,10 @@
 
 ### Website designed, written and developed by **Mohammed Al-Quwaizani**
 
+**Live site:** <https://zxwxg.github.io/raspberry-pi-guide/>
+
+**Source:** <https://github.com/zxwxg/raspberry-pi-guide>
+
 A complete, self-contained static website about the Raspberry Pi: what it is, which model to
 buy, what everything costs, real photographs of the hardware, project ideas, and how to try
 Raspberry Pi OS on your PC in a virtual machine.
