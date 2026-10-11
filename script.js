@@ -638,6 +638,13 @@
   }
 
   function boot() {
+    /* the final numbers live in the HTML for no-JS readers; here they are
+       reset so the count-up animation starts from zero without a flash */
+    if ("IntersectionObserver" in window) {
+      $$("[data-count]").forEach(function (el) {
+        el.textContent = "0" + (el.getAttribute("data-suffix") || "");
+      });
+    }
     fadeInImages();
     injectByline();
     buildToc();
